@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        hr.line 
+        {
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+    </style>
+    <body>
+        <form action="gender.php" method="POST">
+            <fieldset>
+                <legend>GENDER</legend>
+                
+                <input type="radio" name="male">
+                <span class="radiobtn"></span>
+                <label class="gender_btn">Male</label>
+
+                <input type="radio" name="female">
+                <span class="radiobtn"></span>
+                <label class="gender_btn">Female</label>
+
+                <input type="radio" name="other">
+                <span class="radiobtn"></span>
+                <label class="gender_btn">Other</label>
+
+                <hr class="line">
+                <input type="submit" value="Submit">
+
+            </fieldset>
+    </body>
+</html>
