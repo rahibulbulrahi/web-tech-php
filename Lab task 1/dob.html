@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        div.date
+        {
+            text-align: center;
+            max-width: 90px;
+            float: left;
+            margin: 2px;
+        }
+        div.month
+        {
+            text-align: center;
+            max-width: 90px;
+            float: left;
+            margin: 2px;
+        }
+        div.year
+        {
+            text-align: center;
+            max-width: 90px;
+            float: left;
+            margin: 2px;
+        }
+       
+        hr.line 
+        {
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+    </style>
+    <body>
+        <form action="dob.php" method="GET">
+            <fieldset>
+                <legend style="font-family: Calibri;">DATE OF BIRTH</legend>
+                <div class ="date">
+                    <label for="date">dd</label><br>
+                    <input type="text" id="date" name="date" size="5"> /
+                    
+                </div>
+
+                <div class="month">
+                    <label for="month">mm</label><br>
+                    <input type="text" id="month" name="month" size="5"> /
+                </div>
+
+                <div class="year"></div>
+                    <label for="year">yyyy</label><br>
+                    <input type="text" id="year" name="year" size="5">
+                </div>
+                <div class="submit">
+                    <hr class="line">
+                    <input type="submit" value="Submit">
+                </div>
+                
+            </fieldset>
+        </form>
+        
+    </body>
+</html>
