@@ -27,7 +27,6 @@
         if($_SERVER["REQUEST_METHOD"] == "POST")
         {
             $gender = $_POST['gender'];
-            
             if(isset($_POST['submit']))
             {
                 echo "You are $gender";
