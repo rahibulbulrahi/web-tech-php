@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="POST">
+            <fieldset>
+                <legend>NAME</legend>
+                <input type="text" id="name" name="name" size="30"><br>
+                <hr>
+                <input type="submit" name="submit" value="Submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
