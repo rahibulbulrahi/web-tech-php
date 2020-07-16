@@ -4,7 +4,9 @@
         <form action="name.php" method="POST">
             <fieldset>
                 <legend>NAME</legend>
-                <input type="text" id="name" name="name" pattern="[a-z][A-Z]{2,}" size="30"><br>
+                <input type="text" id="name" name="name" pattern="[a-zA-Z\.\-]" size="30"><br>
+                <hr>
+                <input type="submit" value="Submit">
             </fieldset>
         </form>
     </body>
