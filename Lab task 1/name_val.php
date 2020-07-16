@@ -4,7 +4,7 @@
         <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="POST">
             <fieldset>
                 <legend>NAME</legend>
-                <input type="text" id="name" name="name" size="30"><br>
+                <input type="text" id="name" name="name" pattern="[\s]" size="30"><br>
                 <hr>
                 <input type="submit" name="submit" value="Submit">
             </fieldset>
