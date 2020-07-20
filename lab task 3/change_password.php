@@ -3,9 +3,10 @@
     <style>
         .a label
         {
-            width: 80px;
+            width: 150px;
             display: inline-block;
-            text-align: right;
+            text-align: left;
+            margin: 3px;
         }
     </style>
     <body>
@@ -14,25 +15,18 @@
             <legend style="font-family: calibri;">CHANGE PASSWORD</legend>
             <div class="a">
                 <label for="cpass">Current Password:</label>
-                <input type="password" id="cpass" name="cpass" required><br>
+                : <input type="password" id="cpass" name="cpass" size="30px" required><br>
                 
-                <label for="newpass">New Password:</label>
-                <input type="password" id="newpass" name="newpass" required><br>
+                <label for="newpass" style="color:green">New Password</label>
+                : <input type="password" id="newpass" name="newpass" size="30px" required><br>
 
                 
-                <label for="repass">Repeat Password:</label>
-                <input type="password" id="repass" name="repass" required><br>
-
+                <label for="repass" style="color:red">Repeat New Password</label>
+                : <input type="password" id="repass" name="repass" size="30px" required><br>
                 </div>
+                
                 <hr>
-                <input type="checkbox" name="check" value="Remember Me">
-                <span class="checkmark"></span>
-                <label class="addition_check">Remember Me
-                </label>
-                <br><br>
-                <input type="submit" value="Submit" name="submit">
-                <a href="">forget password?</a>
-            
+                <input type="submit" value="Submit" name="submit" style="width: 100px; padding:5px">
         </fieldset>
         </form>
         <br>
@@ -41,14 +35,21 @@
         {
           if(isset($_POST['submit']))
             {
-              $uname = $_POST['uname'];
-              $password = $_POST['password'];
-              if (empty($uname || $password)) 
-              {
-                echo "Username or Passowrd is empty";
-                } else {
-                echo "Your Usename is $uname and password is $password";
-              }
+                $cpass = $_POST['cpass'];
+                $newpass = $_POST['newpass'];
+                $repass  = $_POST['repass'];
+                if($newpass == $cpass)
+                {
+                    echo "Please use new password!";
+                }
+                if($repass != $newpass)
+                {
+                    echo "New password doesn't match!";
+                }
+                else
+                {
+                    echo "Your Password has been change!";
+                }
             }
         }
         ?>
