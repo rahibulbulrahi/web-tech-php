@@ -5,18 +5,9 @@
             <fieldset>
                 <legend>GENDER</legend>
                 
-                <input type="radio" name="gender" value="Male">
-                <span class="radiobtn"></span>
-                <label class="male">Male</label>
-
-                <input type="radio" name="gender" value="Female">
-                <span class="radiobtn"></span>
-                <label class="female">Female</label>
-
-                <input type="radio" name="gender" value="Other">
-                <span class="radiobtn"></span>
-                <label class="other">Other</label>
-
+                <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
+                <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
+                <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other 
                 <hr>
                 <input type="submit" value="Submit" name="submit">
 
@@ -26,11 +17,11 @@
         <?php
         if($_SERVER["REQUEST_METHOD"] == "POST")
         {
-            $gender = $_POST['gender'];
-            if(isset($_POST['submit']))
-            {
-                echo "You are $gender";
-            }
+            if (empty($_POST["gender"])) {
+                $genderErr = "Gender is required";
+              } else {
+                $gender = ($_POST["gender"]);
+              }
         }
         ?>
     </body>
