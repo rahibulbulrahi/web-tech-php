@@ -11,12 +11,18 @@
     <body>
     <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
         <fieldset>
-            <legend style="font-family: calibri;">LOG IN</legend>
+            <legend style="font-family: calibri;">CHANGE PASSWORD</legend>
             <div class="a">
-                <label for="uname">User name:</label>
-                <input type="text" id="uname" name="uname" required><br>
-                <label for="password">Password:</label>
-                <input type="text" id="password" name="password" required><br>
+                <label for="cpass">Current Password:</label>
+                <input type="password" id="cpass" name="cpass" required><br>
+                
+                <label for="newpass">New Password:</label>
+                <input type="password" id="newpass" name="newpass" required><br>
+
+                
+                <label for="repass">Repeat Password:</label>
+                <input type="password" id="repass" name="repass" required><br>
+
                 </div>
                 <hr>
                 <input type="checkbox" name="check" value="Remember Me">
@@ -44,15 +50,6 @@
                 echo "Your Usename is $uname and password is $password";
               }
             }
-          /*
-           $uname = $_POST['uname'];
-           $password = $_POST['password'];
-           if (empty($uname || $password)) 
-           {
-             echo "Username or Passowrd is empty";
-            } else {
-             echo "Your Usename is $uname and password is $password";
-           }*/
         }
         ?>
     </body>
