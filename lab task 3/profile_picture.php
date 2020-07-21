@@ -28,6 +28,32 @@
                 $fileActualExt = strtolower(end($fileEXT));
 
                 $allowed = array('jpeg','jpeg','png');
+
+                if(in_array($fileActualExt, $allowed))
+                {
+                    if($fileError === 0)
+                    {
+                        if($fileSize < 4000)
+                        {
+                            $fileNameNew = uniqid('',true).".".$fileActualExt;
+                            $fileDestination = 'uploads/';
+                            move_uploaded_file($fileDestination, $fileNameNew);
+                            header("Location: index.php?uploadsuccess");
+                        }
+                        else
+                        {
+                            echo "Your file is too big! Not more than 4MB";
+                        }
+                    }
+                    else
+                    {
+                        echo "Erro on uploading your file!";    
+                    }
+                }
+                else
+                {
+                    echo "You cannot upload this type of file!";
+                }
             }
         ?>
     </body>
