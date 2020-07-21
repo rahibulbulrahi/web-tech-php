@@ -89,6 +89,7 @@
                 
                 <hr>
                 <input type="submit" value="Submit" name="submit" style="width: 100px; padding:5px">
+                <input type="reset" value="Reset" name="reset" style="width: 100px; padding:5px">
         </fieldset>
 
 
@@ -106,33 +107,40 @@
                     $date = $_POST['date'];
                     $month = $_POST['month'];
                     $year = $_POST['year'];
+                    
                     if(empty($name))
                     {
                         echo "Name is empty ";
+                    
                     }
                     if(empty($uname))
                     {
                         echo "User Name is empty ";
+                    
                     }
                     if($password != $cpassword)
                     {
                         echo "Your password doesnot match ";
+                    
                     }
                     if(empty($date))
                     {
                         echo "Date is EMPTY! ";
+                    
                     }
                     if(empty($month))
                     {
                         echo "Month is EMPTY! ";
+                    
                     }
                     if(empty($year))
                     {
                         echo "Year is EMPTY! ";
+                    
                     }
                     else 
                     {
-                        echo "Name: $name ; User Name : $uname ; You are : $gender ; Your DOB is: $date/$month/$year";
+                        echo "Name: $name, User Name : $uname, You are : $gender, Your DOB is: $date/$month/$year";
                     }
                 }
             }
