@@ -106,6 +106,18 @@
                     $date = $_POST['date'];
                     $month = $_POST['month'];
                     $year = $_POST['year'];
+                    if(empty($name))
+                    {
+                        echo "Name is empty ";
+                    }
+                    if(empty($uname))
+                    {
+                        echo "User Name is empty ";
+                    }
+                    if($password != $cpassword)
+                    {
+                        echo "Your password doesnot match ";
+                    }
                     if(empty($date))
                     {
                         echo "Date is EMPTY! ";
@@ -120,9 +132,9 @@
                     }
                     else 
                     {
-                        echo"Your DOB is: $date/$month/$year";
+                        echo "Your DOB is: $date/$month/$year";
                     }
-                    
+
             }
         ?>
     </body>
