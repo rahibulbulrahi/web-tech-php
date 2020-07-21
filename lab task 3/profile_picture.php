@@ -26,7 +26,8 @@
 
                 $fileEXT = explode('.', $fileName);
                 $fileActualExt = strtolower(end($fileEXT));
-                
+
+                $allowed = array('jpeg','jpeg','png');
             }
         ?>
     </body>
