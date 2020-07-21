@@ -44,15 +44,6 @@
                 echo "Your Usename is $uname and password is $password";
               }
             }
-          /*
-           $uname = $_POST['uname'];
-           $password = $_POST['password'];
-           if (empty($uname || $password)) 
-           {
-             echo "Username or Passowrd is empty";
-            } else {
-             echo "Your Usename is $uname and password is $password";
-           }*/
         }
         ?>
     </body>
