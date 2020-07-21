@@ -132,9 +132,9 @@
                     }
                     else 
                     {
-                        echo "Your DOB is: $date/$month/$year";
+                        echo "Name: $name ; User Name : $uname ; You are : $gender ; Your DOB is: $date/$month/$year";
                     }
-
+                }
             }
         ?>
     </body>
