@@ -106,7 +106,23 @@
                     $date = $_POST['date'];
                     $month = $_POST['month'];
                     $year = $_POST['year'];
-                }
+                    if(empty($date))
+                    {
+                        echo "Date is EMPTY! ";
+                    }
+                    if(empty($month))
+                    {
+                        echo "Month is EMPTY! ";
+                    }
+                    if(empty($year))
+                    {
+                        echo "Year is EMPTY! ";
+                    }
+                    else 
+                    {
+                        echo"Your DOB is: $date/$month/$year";
+                    }
+                    
             }
         ?>
     </body>
