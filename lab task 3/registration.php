@@ -43,10 +43,10 @@
                 : <input type="text" id="uname" name="uname" required><br>
                 <hr>
                 <label for="password">Password</label>
-                : <input type="text" id="password" name="password" required><br>
+                : <input type="password" id="password" name="password" required><br>
                 <hr>
                 <label for="cpassword">Confirm Password</label>
-                : <input type="text" id="password" name="password" required><br>
+                : <input type="password" id="cpassword" name="cpassword" required><br>
                 
             </div>
             <hr>
