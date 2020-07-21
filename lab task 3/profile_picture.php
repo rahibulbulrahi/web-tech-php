@@ -6,10 +6,11 @@
     <body>
         <fieldset>
         <legend style="font-family: calibri;">PROFILE PICTURE</legend>
-            <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-            <input type="file" name="file" id="file">
+            <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>" enctype="multipart/form-data">
+            
+            <input type="file" name="file">
             <hr>
-            <input type="submit" value="Upload Image" name="submit">
+            <input type="submit" name="submit" value="Upload">
             </form>
         
         </fieldset>
@@ -35,10 +36,9 @@
                     {
                         if($fileSize < 4000)
                         {
-                            $fileNameNew = uniqid('',true).".".$fileActualExt;
+                            $fileNameNew = uniqid('', true).".".$fileActualExt;
                             $fileDestination = 'uploads/';
                             move_uploaded_file($fileDestination, $fileNameNew);
-                            header("Location: index.php?uploadsuccess");
                         }
                         else
                         {
