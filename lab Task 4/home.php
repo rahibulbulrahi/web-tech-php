@@ -17,7 +17,10 @@
     <h1 style="font-size: 40px;text-align: center;">
             <pre>W E L C O M E  T O  E A S Y  T O U R  &  T R A V E L S</pre>
             <hr class="line_2">
-            <p style="font-size: 20px;translate: 7%;">
+            <p style="font-size: 20px;">
+            Easy Tour & Travels is an online travel company that operates a website with user-generated content, 
+            a comparison shopping website, and offers online hotel reservations as well as bookings for transportation, 
+            lodging, travel experiences, and restaurants.</p>
         </h1>
     <?php include('footer.php');?>
     </body>
