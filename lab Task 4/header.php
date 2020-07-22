@@ -43,6 +43,8 @@
             display: inline-block;
             margin-left: 65px;
             padding-top: 20px;
+
+            position: relative;
         }
         nav a
         {
@@ -55,12 +57,30 @@
         {
             color: #000;
         }
+        nav a::before
+        {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 100%;
+            background-color: #444;
+
+            position: absolute;
+            top: 20%;
+            width: 0%;
+
+            transition: all ease-in-out 200ms;
+        }
+        nav a:hover::before
+        {
+            width: 100%;
+        }
     </style>
     <bodY>
         <header>
         <div class ="a">
             <a href="home.php">
-            <img src="logo/world.png" alt="logo" width="35px" height="35px" class="logo">
+            <img src="logo/travel.png" alt="logo" width="200px" height="30px" class="logo">
             </a>
             <nav>
                 <ul>
