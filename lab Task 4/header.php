@@ -5,7 +5,7 @@
         {
             margin: 0px;
             font-family: Calibri;
-            font-weight: 300;
+            font-weight: 400;
         }
         div.a
         {
@@ -26,6 +26,7 @@
         .logo
         {
             float: left;
+            padding: 10px 0;
         }
         nav
         {
@@ -40,6 +41,19 @@
         nav li
         {
             display: inline-block;
+            margin-left: 65px;
+            padding-top: 20px;
+        }
+        nav a
+        {
+            color: #444;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+        nav a:hover
+        {
+            color: #000;
         }
     </style>
     <bodY>
