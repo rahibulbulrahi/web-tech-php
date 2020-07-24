@@ -9,6 +9,7 @@
         {
             width: 50%;
             margin: auto;
+            padding: 50px;
         }
         .login label
         {
@@ -39,6 +40,13 @@
             color:black;
             border-bottom: 1px solid black;
         }
+        input[type="submit"]
+        {
+            width: 100px ;
+            background: none;
+            border: 2px solid grey;
+            padding: 5px;cursor: pointer;
+        }
     </style>
 
     <body>
@@ -60,6 +68,7 @@
                     <label class="rememberme">Remember me
                     </span>
                 </div>
+                <input class="button "type="submit" value="Submit" name="submit">
             </fieldset>
         </form>
     <?php include('footer.php');?>
