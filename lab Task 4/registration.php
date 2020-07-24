@@ -32,6 +32,17 @@
             color:black;
             border-bottom: 1px solid black;
         }
+        input[type="password"]
+        {
+            overflow: hidden;
+            font-size: 15px;
+            padding: 5px 0;
+            border: none;
+            outline: none;
+            background: none;
+            color:black;
+            border-bottom: 1px solid black;
+        }
         input[type="submit"]
         {
             width: 100px ;
@@ -80,10 +91,10 @@
                 : <input type="text" id="uname" name="uname" size="55px" placeholder="user name*" required><br>
                 
                 <label for="password">Password:</label>
-                : <input type="text" id="password" name="password" size="55px" placeholder="password*" required><br>
+                : <input type="password" id="password" name="password" size="55px" placeholder="password*" required><br>
                 
                 <label for="cpassword">Confirm Pasword:</label>
-                : <input type="text" id="cpassword" name="cpassword" size="55px" placeholder="confirm password*" required><br>
+                : <input type="password" id="cpassword" name="cpassword" size="55px" placeholder="confirm password*" required><br>
             
                 <div class="gernder">
                 
@@ -148,33 +159,23 @@
             $date = mysqli_real_escape_string($con, $_POST['date']);
             $month = mysqli_real_escape_string($con, $_POST['month']);
             $year = mysqli_real_escape_string($con, $_POST['year']);
-
-            $unamequery = "select * from registration where username='$uname'";
-            $query = mysqli_query($con,$unamequery);
-
-            $unamecount = mysqli_num_rows($query);
             
             $emailquery = "select * from registration where email='$email'";
-            $query = mysqli_query($con,$unamequery);
+            $query = mysqli_query($con,$emailquery);
 
             $emailcount = mysqli_num_rows($query);
 
-            if($unamecount>0)
+            if($emailcount>0)
             {
-                echo "User Name already exists!";
-            }
-            else
-            {
-                if($emailcount>0)
-                {
-                    echo "Email already exists!";
-                }
+                echo "Email already exists!";
             }
             else
             {
                 if($password === $cpassword)
                 {
-                    echo "password are not matching!";
+                    $insertquery = "insert into registration(name,username,email,password,cpassword,gender,dob) values('$name','$uname','$email','$password','$cpassword','$date-$month-$year')";
+
+                    $iquery = mysqli_query($con, $insertquery);
                 }
             }
         }
