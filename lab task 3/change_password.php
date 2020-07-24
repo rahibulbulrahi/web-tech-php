@@ -8,6 +8,7 @@
             text-align: left;
             margin: 3px;
         }
+        
     </style>
     <body>
     <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">

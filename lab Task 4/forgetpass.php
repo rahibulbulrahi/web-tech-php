@@ -11,7 +11,7 @@
             margin: auto;
             padding: 50px;
         }
-        .login label
+        .forgetpass label
         {
             width: 120px;
             display: inline-block;
@@ -56,16 +56,16 @@
 
     <body>
     <?php include('header.php');?>
-    <form id="login" >
+    <form id="forgetpass" method="get" action="changepass.php">
             <fieldset style="border: black 2px solid;">
-                <legend><b>LOG IN</b></legend>
+                <legend><b>FORGET PASSWORD</b></legend>
 
-                <div class="login">
+                <div class="forgetpass">
                     <label for="email"><b>Email</b></label>
-                    : <input type="text" id="email" name="email" size="55px" placeholder="email*" required><br>
+                    : <input type="text" id="email" name="email" size="55px" placeholder="email*"><br>
 
                 </div><br>
-                <input class="button "type="submit" value="Submit" name="submit">
+                <input class="button "type="submit" value="Search" name="submit">
                 
             </fieldset>
         </form>
