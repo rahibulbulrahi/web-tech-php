@@ -134,6 +134,9 @@
     <?php include('footer.php');?>
 
     <?php
+
+        include 'db.php';        
+
         if(isset($_POST['submit']))
         {
             $name = mysqli_real_escape_string($con, $_POST['name']);
@@ -146,7 +149,34 @@
             $month = mysqli_real_escape_string($con, $_POST['month']);
             $year = mysqli_real_escape_string($con, $_POST['year']);
 
+            $unamequery = "select * from registration where username='$uname'";
+            $query = mysqli_query($con,$unamequery);
 
+            $unamecount = mysqli_num_rows($query);
+            
+            $emailquery = "select * from registration where email='$email'";
+            $query = mysqli_query($con,$unamequery);
+
+            $emailcount = mysqli_num_rows($query);
+
+            if($unamecount>0)
+            {
+                echo "User Name already exists!";
+            }
+            else
+            {
+                if($emailcount>0)
+                {
+                    echo "Email already exists!";
+                }
+            }
+            else
+            {
+                if($password === $cpassword)
+                {
+                    echo "password are not matching!";
+                }
+            }
         }
     ?>
     
