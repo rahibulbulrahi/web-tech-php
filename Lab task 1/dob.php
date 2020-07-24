@@ -29,7 +29,6 @@
                 <div class ="date">
                     <label for="date">dd</label><br>
                     <input type="text" id="date" name="date" size="5"> /
-                    
                 </div>
 
                 <div class="month">

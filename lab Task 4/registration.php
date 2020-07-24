@@ -10,9 +10,13 @@
             width: 50%;
             margin: auto;
         }
+        div.registration
+        {
+            font-weight: Bold;
+        }
         .registration label
         {
-            width: 150px;
+            width: 120px;
             display: inline-block;
             text-align: left;
             margin: 3px;
@@ -33,25 +37,66 @@
     <body>
     <?php include('header.php');?>
         <form id="registration" method="POST" action="">
-            <fieldset>
-                <legend>REGISTRATION</legend>
+            <fieldset style="border: black 2px solid;">
+                <legend><b>REGISTRATION</b></legend>
+                
                 <div class="registration">
 
                 <label for="name">Name</label>
-                : <input type="text" id="name" name="name" size="50px" placeholder="name*" required><br>
-
+                : <input type="text" id="name" name="name" size="55px" placeholder="name*" required><br>
+                
                 <label for="email">Email</label>
-                : <input type="text" id="email" name="email" size="50px" placeholder="email*" required><br>
-
+                : <input type="text" id="email" name="email" size="55px" placeholder="email*" required><br>
+                
                 <label for="uname">User name:</label>
-                : <input type="text" id="uname" name="uname" size="50px" placeholder="user name*" required><br>
-
+                : <input type="text" id="uname" name="uname" size="55px" placeholder="user name*" required><br>
+                
                 <label for="password">Password:</label>
-                : <input type="text" id="password" name="password" size="50px" placeholder="password*" required><br>
-
+                : <input type="text" id="password" name="password" size="55px" placeholder="password*" required><br>
+                
                 <label for="cpassword">User name:</label>
-                : <input type="text" id="cpassword" name="cpassword" size="50px" placeholder="confirm password*" required><br>
+                : <input type="text" id="cpassword" name="cpassword" size="55px" placeholder="confirm password*" required><br>
+            
+                <div class="gernder">
+                
+                <fieldset style="border: black 2px solid;">
+                <legend><b>GENDER</b></legend>
+                
+                <input type="radio" name="gender" value="Male">
+                <span class="radiobtn"></span>
+                <label class="male"><b>Male</b></label>
+
+                <input type="radio" name="gender" value="Female">
+                <span class="radiobtn"></span>
+                <label class="female">Female</label>
+
+                <input type="radio" name="gender" value="Other">
+                <span class="radiobtn"></span>
+                <label class="other">Other</label>
+
+                </fieldset>
                 </div>
+
+                <div class="dob">
+                <fieldset style="border: black 2px solid;">
+                <legend><b>DATE OF BIRTH</b></legend>
+                
+                <div class ="date">
+                    <input type="text" id="date" name="date" placeholder="date" style="text-align: center;" size="5"> / 
+                </div>
+
+                <div class="month">
+                    <input type="text" id="month" name="month" placeholder="month" style="text-align: center;" size="5"> /
+                </div>
+
+                <div class="year">
+                    <input type="text" id="year" name="year" placeholder="year" style="text-align: center;" size="6">
+                </div>
+                
+            </fieldset>
+                </div>
+            </div>
+
             </fieldset>
         </form>
     <?php include('footer.php');?>
