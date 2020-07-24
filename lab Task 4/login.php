@@ -21,6 +21,28 @@
             text-align: left;
             margin: 3px;
         }
+        input[type="text"]
+        {
+            overflow: hidden;
+            font-size: 15px;
+            padding: 5px 0;
+            border: none;
+            outline: none;
+            background: none;
+            color:black;
+            border-bottom: 1px solid black;
+        }
+        input[type="password"]
+        {
+            overflow: hidden;
+            font-size: 15px;
+            padding: 5px 0;
+            border: none;
+            outline: none;
+            background: none;
+            color:black;
+            border-bottom: 1px solid black;
+        }
     </style>
 
     <body>
@@ -31,8 +53,10 @@
 
                 <div class="login">
                     <label for="uname">User Name</label>
-                    <input type="text" id="uname" name="uname" size="55px" placeholder="name*" required>
+                    : <input type="text" id="uname" name="uname" size="55px" placeholder="name*" required><br>
 
+                    <label for="password">Password</label>
+                    : <input type="password" id="password" name="password" size="55px" placeholder="password*" required>
                 </div>
             </fieldset>
         </form>
