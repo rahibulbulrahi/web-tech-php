@@ -48,10 +48,10 @@
                 <legend><b>LOG IN</b></legend>
 
                 <div class="login">
-                    <label for="uname">User Name</label>
+                    <label for="uname"><b>User Name</b></label>
                     : <input type="text" id="uname" name="uname" size="55px" placeholder="name*" required><br>
 
-                    <label for="password">Password</label>
+                    <label for="password"><b>Password</b></label>
                     : <input type="password" id="password" name="password" size="55px" placeholder="password*" required>
                     <hr>
 
