@@ -10,10 +10,6 @@
             width: 50%;
             margin: auto;
         }
-        div.login
-        {
-            font-weight: Bold;
-        }
         .login label
         {
             width: 120px;
@@ -57,6 +53,12 @@
 
                     <label for="password">Password</label>
                     : <input type="password" id="password" name="password" size="55px" placeholder="password*" required>
+                    <hr>
+
+                    <input type="checkbox" name="rememberme" value="rememberme">
+                    <span class="checkamrk">
+                    <label class="rememberme">Remember me
+                    </span>
                 </div>
             </fieldset>
         </form>
