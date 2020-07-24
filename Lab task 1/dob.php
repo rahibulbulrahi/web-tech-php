@@ -18,7 +18,6 @@
             text-align: center;
             float: left;
             margin: 2px;
-            
         }
     </style>
     <body>

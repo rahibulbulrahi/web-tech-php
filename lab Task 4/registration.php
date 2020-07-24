@@ -31,7 +31,35 @@
             background: none;
             color:black;
             border-bottom: 1px solid black;
-            
+        }
+        input[type="submit"]
+        {
+            width: 100px ;
+            background: none;
+            border: 2px solid grey;
+            padding: 5px;cursor: pointer;
+        }
+        div.date
+        {
+            text-align: center;
+            float: left;
+            margin: 2px;
+        }
+        div.month
+        {
+            text-align: center;
+            float: left;
+            margin: 2px;
+        }
+        div.year
+        {
+            text-align: center;
+            float: left;
+            margin: 2px;
+        }
+        .button:hover 
+        {
+            border: 2px solid black ;
         }
     </style>
     <body>
@@ -93,8 +121,12 @@
                     <input type="text" id="year" name="year" placeholder="year" style="text-align: center;" size="6">
                 </div>
                 
-            </fieldset>
-                </div>
+                <pre> <i>(dd/mm/yyyy)</i></pre>
+
+                </fieldset>
+                </div><br>
+                <input class="button "type="submit" value="Submit" name="submit">
+                <input class="button "type="submit" value="Reset Form" name="reset">
             </div>
 
             </fieldset>
