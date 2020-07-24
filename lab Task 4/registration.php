@@ -64,11 +64,11 @@
     </style>
     <body>
     <?php include('header.php');?>
-        <form id="registration" method="POST" action="">
+        <form id="registration" >
             <fieldset style="border: black 2px solid;">
                 <legend><b>REGISTRATION</b></legend>
                 
-                <div class="registration">
+                <div class="registration" method="POST" action="">
 
                 <label for="name">Name</label>
                 : <input type="text" id="name" name="name" size="55px" placeholder="name*" required><br>
@@ -82,7 +82,7 @@
                 <label for="password">Password:</label>
                 : <input type="text" id="password" name="password" size="55px" placeholder="password*" required><br>
                 
-                <label for="cpassword">User name:</label>
+                <label for="cpassword">Confirm Pasword:</label>
                 : <input type="text" id="cpassword" name="cpassword" size="55px" placeholder="confirm password*" required><br>
             
                 <div class="gernder">
@@ -132,5 +132,23 @@
             </fieldset>
         </form>
     <?php include('footer.php');?>
+
+    <?php
+        if(isset($_POST['submit']))
+        {
+            $name = mysqli_real_escape_string($con, $_POST['name']);
+            $email = mysqli_real_escape_string($con, $_POST['email']);
+            $uname = mysqli_real_escape_string($con, $_POST['uname']);
+            $password = mysqli_real_escape_string($con, $_POST['password']);
+            $cpassword = mysqli_real_escape_string($con, $_POST['cpassword']);
+            $gender = mysqli_real_escape_string($con, $_POST['gender']);
+            $date = mysqli_real_escape_string($con, $_POST['date']);
+            $month = mysqli_real_escape_string($con, $_POST['month']);
+            $year = mysqli_real_escape_string($con, $_POST['year']);
+
+
+        }
+    ?>
+    
     </body>
 </html>
