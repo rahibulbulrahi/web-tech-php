@@ -47,6 +47,20 @@
             border: 2px solid grey;
             padding: 5px;cursor: pointer;
         }
+        .button:hover 
+        {
+            border: 2px solid black ;
+        }
+        a
+        {
+            text-decoration: none;
+            color: black;
+            padding: 0 5%;
+        }
+        .link:hover
+        {
+            color: red;
+        }
     </style>
 
     <body>
@@ -67,8 +81,9 @@
                     <span class="checkamrk">
                     <label class="rememberme">Remember me
                     </span>
-                </div>
+                </div><br>
                 <input class="button "type="submit" value="Submit" name="submit">
+                <a href="forgetpass.php" class="link">Forget Password?</a>
             </fieldset>
         </form>
     <?php include('footer.php');?>
