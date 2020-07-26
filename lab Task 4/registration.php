@@ -83,7 +83,8 @@
     <body>
     <?php include('header.php');?>
         <form id="registration" method="POST" action="db.php">
-            <fieldset style="border: black 2px solid;">
+            
+        <fieldset style="border: black 2px solid;">
                 <legend><b>REGISTRATION</b></legend>
                 
                 <div class="registration" method="POST" action="">
@@ -128,15 +129,15 @@
                 <legend><b>DATE OF BIRTH</b></legend>
                 
                 <div class ="date">
-                    <input type="text" id="date" name="date" placeholder="date" style="text-align: center;" size="5"> / 
+                    <input type="text" id="date" name="dob" value="date" placeholder="date" style="text-align: center;" size="5"> / 
                 </div>
 
                 <div class="month">
-                    <input type="text" id="month" name="month" placeholder="month" style="text-align: center;" size="5"> /
+                    <input type="text" id="month" name="dob" value="mmoth" placeholder="month" style="text-align: center;" size="5"> /
                 </div>
 
                 <div class="year">
-                    <input type="text" id="year" name="year" placeholder="year" style="text-align: center;" size="6">
+                    <input type="text" id="year" name="dob" value="year" placeholder="year" style="text-align: center;" size="6">
                 </div>
                 
                 <pre> <i>(dd/mm/yyyy)</i></pre>

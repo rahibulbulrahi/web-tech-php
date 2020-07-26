@@ -6,6 +6,7 @@
     $password = filter_input(INPUT_POST,'password');
     $cpassword = filter_input(INPUT_POST,'cpassword');
     $gender = filter_input(INPUT_POST,'gender');
+    $dob = filter_input(INPUT_POST,'dob');
     $date = filter_input(INPUT_POST,'date');
     $month = filter_input(INPUT_POST,'month');
     $year = filter_input(INPUT_POST,'year');
@@ -23,7 +24,16 @@
     }
     else
     {
-        $sql = "INSERT INTO registration(name,email,username,password,cpassword,gender,dob) VALUES()"
+        $sql = "INSERT INTO registration(name,email,username,password,cpassword,gender,dob) 
+        VALUES($name,$email,$uname,$password,$cpassword,$dob)";
+    }
+    if($conn->query($sql))
+    {
+        echo "Registration complete...";
+    }
+    else
+    {
+        echo "Error..";
     }
 
 ?>
