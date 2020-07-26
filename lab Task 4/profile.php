@@ -18,7 +18,7 @@
             font-size: 15px;
             color: black;
             list-style: none;
-            padding: 15px 15px;
+            padding: 15px 0px;
             
         }
         .sidebar a
@@ -32,20 +32,35 @@
         {
             color: #000;
         }
-    </style>
+        hr.line
+        {
+            border: 2px solid Grey; border-radius: 2px; width: 200px;
+        }
+        div.welcome
+        {
+            width: 50%;
+            margin: auto;
+        }
+ </style>
 
     <body>
-    <?php include('header.php');?>
+    <?php include('loginhead.php');?>
         
         <div class="sidebar">
             <ul>
+                <li style="font-size: 20px;"><b>--- ACCOOUNT ---</b></li>
+                <hr class="line">
                 <li><a href=profile.php>Dashboard<a></li>
                 <li><a href=viewprofile.php>View Profie</li>
                 <li><a href=editprofile.php>Edit Profile</li>
                 <li><a href=changepropic.php>Change Profile Picture</li>
                 <li><a href=changepropass.php>Change Profile Password</li>
-                <li><a href=home.php>Log Out</li>
+                <li><a href=home.php>Log Out</a></li>
             </ul>
+        </div>
+        
+        <div class="welcome">
+            <h1>Welcome Back</h1>
         </div>
 
     
