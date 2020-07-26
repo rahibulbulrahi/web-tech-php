@@ -41,6 +41,34 @@
             width: 50%;
             margin: auto;
         }
+        .profile label
+        {
+            width: 120px;
+            display: inline-block;
+            text-align: left;
+            margin: 3px;
+        }
+        input[type="text"]
+        {
+            overflow: hidden;
+            font-size: 15px;
+            padding: 5px 0;
+            border: none;
+            outline: none;
+            background: none;
+            color:black;
+            border-bottom: 1px solid black;
+        }
+        ::placeholder
+        {
+            color: black;
+            opacity: 1;
+        }
+        .editprofile a
+        {
+            background: none;
+            color: black
+        }
  </style>
 
     <body>
@@ -60,7 +88,28 @@
         </div>
         
         <div class="welcome">
-            
+        <form id="profile">
+            <fieldset style="border: black 2px solid;">
+                <legend><b>PROFILE</b></legend>
+
+                <div class="profile">
+                    <label for="name"><b>Name</b></label>
+                    : <input type="text" id="name" name="name" size="20px" placeholder="Bob" disabled><br>
+
+                    <label for="email"><b>Email</b></label>
+                    : <input type="text" id="email" name="email" size="20px" placeholder="bob@aiub.edu" disabled><br>
+
+                    <label for="gender"><b>Gender</b></label>
+                    : <input type="text" id="gender" name="gender" size="20px" placeholder="Male" disabled><br>
+
+                    <label for="dob"><b>Date of Birth</b></label>
+                    : <input type="text" id="dob" name="dob" size="20px" placeholder="19/09/1998" disabled><br>
+
+                    </span>
+                </div><br>
+                <div class="editprofile"><a href="editprofile.php">Edit Profile</a></div>
+            </fieldset>
+        </form>
         </div>
 
     

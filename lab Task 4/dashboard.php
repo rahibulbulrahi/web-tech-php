@@ -34,7 +34,7 @@
         }
         hr.line
         {
-            border: 2px solid Grey; border-radius: 2px; width: 200px;
+            border: 2px solid Grey; border-radius: 2px; width: 100px;
         }
         div.welcome
         {
