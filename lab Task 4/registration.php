@@ -50,6 +50,13 @@
             border: 2px solid grey;
             padding: 5px;cursor: pointer;
         }
+        input[type="reset"]
+        {
+            width: 100px ;
+            background: none;
+            border: 2px solid grey;
+            padding: 5px;cursor: pointer;
+        }
         div.date
         {
             text-align: center;
@@ -75,7 +82,7 @@
     </style>
     <body>
     <?php include('header.php');?>
-        <form id="registration" >
+        <form id="registration" method="POST" action="db.php">
             <fieldset style="border: black 2px solid;">
                 <legend><b>REGISTRATION</b></legend>
                 
@@ -136,50 +143,13 @@
 
                 </fieldset>
                 </div><br>
-                <input class="button "type="submit" value="Submit" name="submit">
-                <input class="button "type="submit" value="Reset Form" name="reset">
+                <input class="button" type="submit" value="Submit" name="submit">
+                <input class="button" type="reset" value="Reset Form" name="reset">
             </div>
 
             </fieldset>
         </form>
     <?php include('footer.php');?>
-
-    <?php
-
-        include 'db.php';        
-
-        if(isset($_POST['submit']))
-        {
-            $name = mysqli_real_escape_string($con, $_POST['name']);
-            $email = mysqli_real_escape_string($con, $_POST['email']);
-            $uname = mysqli_real_escape_string($con, $_POST['uname']);
-            $password = mysqli_real_escape_string($con, $_POST['password']);
-            $cpassword = mysqli_real_escape_string($con, $_POST['cpassword']);
-            $gender = mysqli_real_escape_string($con, $_POST['gender']);
-            $date = mysqli_real_escape_string($con, $_POST['date']);
-            $month = mysqli_real_escape_string($con, $_POST['month']);
-            $year = mysqli_real_escape_string($con, $_POST['year']);
-            
-            $emailquery = "select * from registration where email='$email'";
-            $query = mysqli_query($con,$emailquery);
-
-            $emailcount = mysqli_num_rows($query);
-
-            if($emailcount>0)
-            {
-                echo "Email already exists!";
-            }
-            else
-            {
-                if($password === $cpassword)
-                {
-                    $insertquery = "insert into registration(name,username,email,password,cpassword,gender,dob) values('$name','$uname','$email','$password','$cpassword','$date-$month-$year')";
-
-                    $iquery = mysqli_query($con, $insertquery);
-                }
-            }
-        }
-    ?>
     
     </body>
 </html>
