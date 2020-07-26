@@ -43,7 +43,6 @@
             display: inline-block;
             margin-left: 65px;
             padding-top: 20px;
-
             position: relative;
         }
         nav a
@@ -68,7 +67,7 @@
             position: absolute;
             top: 20%;
             width: 0%;
-
+            
             transition: all ease-in-out 200ms;
         }
         nav a:hover::before
