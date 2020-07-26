@@ -65,7 +65,7 @@
 
     <body>
     <?php include('header.php');?>
-    <form id="login" >
+    <form id="login" method="post" action="profile.php">>
             <fieldset style="border: black 2px solid;">
                 <legend><b>LOG IN</b></legend>
 
