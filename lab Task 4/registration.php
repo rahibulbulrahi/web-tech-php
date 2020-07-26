@@ -104,7 +104,7 @@
                 <label for="cpassword">Confirm Pasword:</label>
                 : <input type="password" id="cpassword" name="cpassword" size="55px" placeholder="confirm password*" required><br>
             
-                <div class="gernder">
+                <div class="gender">
                 
                 <fieldset style="border: black 2px solid;">
                 <legend><b>GENDER</b></legend>

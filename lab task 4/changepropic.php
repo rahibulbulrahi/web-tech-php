@@ -88,43 +88,8 @@
             </ul>
         </div>
         
-        <div class="welcome">
-        <form id="profile">
-            <fieldset style="border: black 2px solid;">
-                <legend><b>PROFILE</b></legend>
-
-                <div class="profile">
-                    <label for="name"><b>Name</b></label>
-                    : <input type="text" id="name" name="name" size="20px" placeholder="Bob" ><br>
-
-                    <label for="email"><b>Email</b></label>
-                    : <input type="text" id="email" name="email" size="20px" placeholder="bob@aiub.edu" ><br>
-
-                    <div class="gender">
-                
-                    <label for="gender"><b>Gender<b></label>
-                    <input type="radio" name="gender" value="Male">
-                    <span class="radiobtn"></span>
-                    <label class="male"><b>Male</b></label>
-
-                    <input type="radio" name="gender" value="Female">
-                    <span class="radiobtn"></span>
-                    <label class="female">Female</label>
-
-                    <input type="radio" name="gender" value="Other">
-                    <span class="radiobtn"></span>
-                    <label class="other">Other</label>
-
-                    </div>
-
-                    <label for="dob"><b>Date of Birth</b></label>
-                    : <input type="text" id="dob" name="dob" size="20px" placeholder="19/09/1998" ><br>
-
-                    </span>
-                </div><br>
-                <input class="button" type="submit" value="Submit" name="submit">
-            </fieldset>
-        </form>
+        <div class="propichange">
+        
         </div>
 
     
