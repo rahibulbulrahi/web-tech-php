@@ -36,12 +36,12 @@
         {
             border: 2px solid Grey; border-radius: 2px; width: 200px;
         }
-        div.welcome
+        div.propicchange
         {
             width: 50%;
             margin: auto;
         }
-        .profile label
+        .propicchange label
         {
             width: 120px;
             display: inline-block;
@@ -88,8 +88,17 @@
             </ul>
         </div>
         
-        <div class="propichange">
+        <div class="propicchange">
+        <fieldset style="border: black 2px solid;">
+            <legend style="font-family: calibri;"><b>CHANGE PROFILE PICTURE</b></legend>
+            <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>" enctype="multipart/form-data">
+            
+            <input type="file" name="file">
+            <hr>
+            <input type="submit" name="submit" value="Upload">
+            </form>
         
+        </fieldset>
         </div>
 
     

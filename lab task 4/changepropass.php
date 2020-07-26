@@ -36,19 +36,19 @@
         {
             border: 2px solid Grey; border-radius: 2px; width: 200px;
         }
-        div.welcome
+        form
         {
             width: 50%;
             margin: auto;
         }
-        .profile label
+        .changepass label
         {
-            width: 120px;
+            width: 200px;
             display: inline-block;
             text-align: left;
             margin: 3px;
         }
-        input[type="text"]
+        input[type="password"]
         {
             overflow: hidden;
             font-size: 15px;
@@ -87,11 +87,29 @@
                 <li><a href=home.php>Log Out</a></li>
             </ul>
         </div>
-        
-        <div class="passchange">
-        
-        </div>
+        <div class="changepass">
+        <form id="changepass" >
+            <fieldset style="border: black 2px solid;">
+                <legend><b>CHANGE PASSWORD</b></legend>
 
+                <div class="changepass">
+                    <label for="cpass">Current Password:</label>
+                    : <input type="password" id="cpass" name="cpass" size="30px" required><br>
+                    
+                    <label for="newpass" style="color:green">New Password</label>
+                    : <input type="password" id="newpass" name="newpass" size="30px" required><br>
+
+                    
+                    <label for="repass" style="color:red">Repeat New Password</label>
+                    : <input type="password" id="repass" name="repass" size="30px" required><br>
+                    </div>
+                    <hr>
+                    <input class="button "type="submit" value="Submit" name="submit">
+                    
+            </fieldset>
+            
+        </form>
+        
     
     <?php include('footer.php');?>
     </body>
