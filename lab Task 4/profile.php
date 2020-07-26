@@ -9,9 +9,9 @@
         {
             position: fixed;
             width: 250px;
-            height: 82%;
+            height: 81%;
             background: #b3b3b3;
-            border: 2px solid black;
+            border: 5px solid black;
         }
         .sidebar ul li
         {
@@ -32,20 +32,6 @@
         {
             color: #000;
         }
-        .sidebar a::before
-        {
-            content: '';
-            display: block;
-            height: 5px;
-            background-color: #444;
-            position: relative;
-            width: 0%;
-            transition: all ease-in-out 200ms;
-        }
-        .sidebar a:hover::before
-        {
-            width: 100%;
-        }
     </style>
 
     <body>
@@ -53,7 +39,7 @@
         
         <div class="sidebar">
             <ul>
-                <li><a href=dashboard.php>Dashboard<a></li>
+                <li><a href=profile.php>Dashboard<a></li>
                 <li><a href=viewprofile.php>View Profie</li>
                 <li><a href=editprofile.php>Edit Profile</li>
                 <li><a href=changepropic.php>Change Profile Picture</li>
@@ -61,6 +47,7 @@
                 <li><a href=home.php>Log Out</li>
             </ul>
         </div>
+
     
     <?php include('footer.php');?>
     </body>
