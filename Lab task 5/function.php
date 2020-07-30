@@ -49,5 +49,20 @@ function showpackage($id){
 
     return $row;
 }
+function updatePackage($id, $data){
+    $conn = db_conn();
+    $selectQuery = "UPDATE user_info set Name = ?, Surname = ?, Username = ? where ID = ?";
+    try{
+        $stmt = $conn->prepare($selectQuery);
+        $stmt->execute([
+        	$data['name'], $data['surname'], $data['username'], $id
+        ]);
+    }catch(PDOException $e){
+        echo $e->getMessage();
+    }
+    
+    $conn = null;
+    return true;
+}
 
 ?>
