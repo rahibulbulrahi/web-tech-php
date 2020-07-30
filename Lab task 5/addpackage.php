@@ -29,7 +29,7 @@
     </style>
 
     <body>
-        <form action="controller/createpackage.php" method="POST">
+        <form action="controller/createpackage.php" method="POST" enctype="multipart/form-data">
             <fieldset>
                 <legend>ADD PACKAGE</legend>
 
