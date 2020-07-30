@@ -1,18 +1,19 @@
 <?php 
 
 require_once 'controller/packageinfo.php';
-$student = fetchStudent($_GET['id']);
+$student = fetchPackage($_GET['id']);
 
  ?>
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
+<style>
+
+</style>
 <body>
 
- <form action="controller/updateStudent.php" method="POST" enctype="multipart/form-data">
-  <label for="name">Name:</label><br>
+ <form action="controller/updatePackage.php" method="POST" enctype="multipart/form-data">
+  
+ <label for="name">Name:</label><br>
   <input value="<?php echo $student['Name'] ?>" type="text" id="name" name="name"><br>
   <label for="surname">Surname:</label><br>
   <input value="<?php echo $student['Surname'] ?>" type="text" id="surname" name="surname"><br>
@@ -20,8 +21,9 @@ $student = fetchStudent($_GET['id']);
   <input value="<?php echo $student['Username'] ?>" type="text" id="username" name="username"><br>
   <input type="file" name="image"><br><br>
   <input type="hidden" name="id" value="<?php echo $_GET['id'] ?>">
-  <input type="submit" name = "updateStudent" value="Update">
+  <input type="submit" name = "updatePackage" value="Update">
   <input type="reset"> 
+
 </form> 
 
 </body>
