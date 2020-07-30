@@ -33,7 +33,7 @@ $travel = fetchAllPackage();
                 <td><?php echo $travel_info['duration'] ?></td>
                 <td><?php echo $travel_info['image'] ?></td>
 				<td><img width="100px" src="uploads/<?php echo $travel_info['image'] ?>" alt="<?php echo $travel_info['Name'] ?>"></td>
-				
+				<td><a href="editpackage.php?id=<?php echo $travel_info['ID'] ?>">Edit</a>&nbsp<a href="controller/deletepackage.php?id=<?php echo $travel_info['ID'] ?>">Delete</a></td>
 			</tr>
 		<?php endforeach; ?>
 		
