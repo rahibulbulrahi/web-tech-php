@@ -21,7 +21,7 @@ if(isset($_POST['createpackage']))
         echo "Sorry, there was an error uploading your file.";
     }
     
-    if (addStudent($data)) 
+    if (addpackage($data)) 
     {
           echo 'Successfully added!!';
     }
