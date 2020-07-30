@@ -49,7 +49,7 @@
                         
                     <input type="file" name="image"><br><br>
                         
-                    <input type="submit" name = "createStudent" value="Create">
+                    <input type="submit" name = "createpackage" value="Create">
                     <input type="reset"> 
                     </div>
             </fieldset>
