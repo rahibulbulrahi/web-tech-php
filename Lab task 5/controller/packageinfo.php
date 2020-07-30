@@ -2,11 +2,9 @@
 
 require_once 'function.php';
 
-function fetchAllPackage(){
+function fetchAllPackage()
+{
 	return showAllPackage();
 
 }
-function fetchPackage($id){
-	return showPackage($id);
-
-}
+?>

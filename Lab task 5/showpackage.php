@@ -1,7 +1,7 @@
 <?php  
 require_once 'controller/packageinfo.php';
 
-$travel_infos = fetchAllPackage();
+$travel = fetchAllPackage();
 
 ?>
 <!DOCTYPE html>
@@ -26,7 +26,7 @@ $travel_infos = fetchAllPackage();
 		</tr>
 	</thead>
 	<tbody>
-		<?php foreach ($travel_infos as $i => $travel_info): ?>
+		<?php foreach ($travel as $i => $travel_info): ?>
 			<tr>
 				<td><?php echo $travel_info['Location'] ?></td>
 				<td><?php echo $travel_info['Information'] ?></td>
