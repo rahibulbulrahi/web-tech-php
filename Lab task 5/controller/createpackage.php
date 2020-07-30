@@ -7,7 +7,7 @@ if(isset($_POST['createpackage']))
     $data['information'] = $_POST['information'];
     $data['duration'] = $_POST['duration'];
     $data['price'] = $_POST['price'];
-    $data['image'] = basename($_FILES["image"]['name']);
+    $data['image'] = basename($_FILES["image"]["name"]);
 
     $target_dir = "../uploads/";
     $target_file = $target_dir . basename($_FILES["image"]["name"]);
