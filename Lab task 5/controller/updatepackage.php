@@ -3,10 +3,10 @@ require_once '../function.php';
 
 
 if (isset($_POST['updatepackage'])) {
-	$data['location'] = $_POST['name'];
-	$data['surname'] = $_POST['surname'];
-	$data['username'] = $_POST['username'];
-	// $data['password'] = password_hash($_POST['password'], PASSWORD_BCRYPT, ["cost" => 12]);;
+	$data['location'] = $_POST['location'];
+    $data['information'] = $_POST['information'];
+    $data['duration'] = $_POST['duration'];
+    $data['price'] = $_POST['price'];
 	$data['image'] = basename($_FILES["image"]["name"]);
 
 	$target_dir = "../uploads/";
