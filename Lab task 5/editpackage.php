@@ -1,7 +1,7 @@
 <?php 
 
 require_once 'controller/packageinfo.php';
-$student = fetchPackage($_GET['id']);
+$travel_info = fetchPackage($_GET['id']);
 
  ?>
 <!DOCTYPE html>
