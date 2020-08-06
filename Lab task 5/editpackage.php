@@ -38,7 +38,7 @@ $student = fetchPackage($_GET['id']);
  <form action="controller/updatepackage.php" method="POST" enctype="multipart/form-data">
   
  <fieldset>
-     <legend>ADD PACKAGE</legend>
+     <legend>EDIT PACKAGE</legend>
 
     <div class = "info">
                     
