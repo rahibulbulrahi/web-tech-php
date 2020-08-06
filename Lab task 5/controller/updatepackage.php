@@ -2,7 +2,7 @@
 require_once '../function.php';
 
 
-if (isset($_POST['updatepackage'])) {
+if (isset($_POST['update'])) {
 	$data['location'] = $_POST['location'];
     $data['information'] = $_POST['information'];
     $data['duration'] = $_POST['duration'];
