@@ -1,7 +1,7 @@
 <?php  
 require_once 'controller/packageinfo.php';
 
-$student = fetchPackage($_GET['id']);
+$travel_info = fetchPackage($_GET['id']);
 
 ?>
 <!DOCTYPE html>
@@ -18,7 +18,6 @@ $student = fetchPackage($_GET['id']);
 		<th>Duration</th>
 		<th>Price</th>
 		<th>Image</th>
-		<th>Action</th>
 	</tr>
 	<tr>
 		<td><a href="showpackage.php?id=<?php echo $travel_info['id'] ?>"><?php echo $travel_info['location'] ?></a></td>

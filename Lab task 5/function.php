@@ -51,11 +51,11 @@ function showpackage($id){
 }
 function updatePackage($id, $data){
     $conn = db_conn();
-    $selectQuery = "UPDATE user_info set Name = ?, Surname = ?, Username = ? where ID = ?";
+    $selectQuery = "UPDATE package set location = ?, information = ?, duration = ?, price = ? where ID = ?";
     try{
         $stmt = $conn->prepare($selectQuery);
         $stmt->execute([
-        	$data['name'], $data['surname'], $data['username'], $id
+        	$data['location'], $data['information'], $data['duration'], $data['price'], $id
         ]);
     }catch(PDOException $e){
         echo $e->getMessage();

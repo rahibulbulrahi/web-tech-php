@@ -53,8 +53,6 @@ $travel_info = fetchPackage($_GET['id']);
                     
       <label for="price">Price</label>
       : <input value="<?php echo $travel_info['price'] ?>" type="text" id="price" name="price" size="50px"><br>
-                        
-      <input type="file" name="image"><br><br>
                     
       <input type="hidden" name="id" value="<?php echo $_GET['id'] ?>">
 
