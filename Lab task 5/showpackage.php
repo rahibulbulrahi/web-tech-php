@@ -24,8 +24,7 @@ $travel_info = fetchPackage($_GET['id']);
 		<td><?php echo $travel_info['information'] ?></td>
         <td><?php echo $travel_info['duration'] ?></td>
         <td><?php echo $travel_info['price']?></td>
-        <td><?php echo $travel_info['image'] ?></td>
-		<td><img width="100px" src="uploads/<?php echo $$travel_info['image'] ?>" alt="<?php echo $travel_info['location'] ?>"></td>
+		<td><img width="100px" src="uploads/<?php echo $travel_info['image'] ?>" alt="<?php echo $travel_info['name'] ?>"></td>
 	</tr>
 
 </table>
