@@ -21,11 +21,11 @@ $travel_info = fetchPackage($_GET['id']);
 	</tr>
 	<tr>
 		<td><a href="showpackage.php?id=<?php echo $travel_info['id'] ?>"><?php echo $travel_info['location'] ?></a></td>
-		<td><?php echo $travel_info['location'] ?></td>
 		<td><?php echo $travel_info['information'] ?></td>
         <td><?php echo $travel_info['duration'] ?></td>
+        <td><?php echo $travel_info['price']?></td>
         <td><?php echo $travel_info['image'] ?></td>
-		<td><img width="100px" src="uploads/<?php echo $student['image'] ?>" alt="<?php echo $student['location'] ?>"></td>
+		<td><img width="100px" src="uploads/<?php echo $$travel_info['image'] ?>" alt="<?php echo $travel_info['location'] ?>"></td>
 	</tr>
 
 </table>
