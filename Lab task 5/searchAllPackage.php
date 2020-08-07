@@ -14,19 +14,20 @@
 <table>
 	<thead>
 		<tr>
+        <th>Location ID</th>
         <th>Location</th>
-		<th>Information</th>
 		<th>Duration</th>
 		<th>Price</th>
-		<th>Image</th>
 		</tr>
 	</thead>
 	<tbody>
-		<?php foreach ($allSearchedUsers as $i => $user): ?>
+		<?php foreach ($allSearchedUsers as $i => $travel): ?>
 			<tr>
-				<td><a href="showUser.php?id=<?php echo $user['ID'] ?>"><?php echo $user['ID'] ?></a></td>
-				<td><?php echo $user['Username'] ?></td>
-				<td><a href="editUser.php?id=<?php echo $user['ID'] ?>">Edit</a>&nbsp<a href="controller/deleteUser.php?id=<?php echo $user['ID'] ?>">Delete</a></td>
+				<td><a href="showpackage.php?id=<?php echo $travel['id'] ?>"><?php echo $travel['id'] ?></a></td>
+                <td><?php echo $travel['location'] ?></td>
+                <td><?php echo $travel['duration'] ?></td>
+                <td><?php echo $travel['price']?></td>
+				<td><a href="editpackage.php?id=<?php echo $user['ID'] ?>">Edit</a>&nbsp<a href="controller/deletepackage.php?id=<?php echo $user['ID'] ?>">Delete</a></td>
 			</tr>
 		<?php endforeach; ?>
 		
