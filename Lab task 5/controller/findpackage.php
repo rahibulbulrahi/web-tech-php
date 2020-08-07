@@ -8,7 +8,7 @@ if (isset($_POST['findPackage'])) {
 
     try {
     	
-    	$allSearchedUsers = searchUser($_POST['user_name']);
+    	$allSearchedUsers = searchPackage($_POST['location']);
     	require_once '../searchalluser.php';
 
     } catch (Exception $ex) {

@@ -79,9 +79,9 @@ function deletePackage($id){
     return true;
 }
 
-function searchPackage($user_name){
+function searchPackage($location){
     $conn = db_conn();
-    $selectQuery = "SELECT * FROM `user_info` WHERE Username LIKE '%$user_name%'";
+    $selectQuery = "SELECT * FROM `package` WHERE location LIKE '%$location%'";
 
     
     try{
