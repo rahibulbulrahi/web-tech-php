@@ -67,7 +67,7 @@ function updatePackage($id, $data){
 
 function deletePackage($id){
 	$conn = db_conn();
-    $selectQuery = "DELETE FROM `user_info` WHERE `ID` = ?";
+    $selectQuery = "DELETE FROM `package` WHERE `ID` = ?";
     try{
         $stmt = $conn->prepare($selectQuery);
         $stmt->execute([$id]);
