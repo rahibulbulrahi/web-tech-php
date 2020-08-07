@@ -9,7 +9,7 @@ if (isset($_POST['findPackage'])) {
     try {
     	
     	$allSearchedUsers = searchPackage($_POST['location']);
-    	require_once '../searchalluser.php';
+    	require_once '../searchAllPackage.php';
 
     } catch (Exception $ex) {
     	echo $ex->getMessage();
