@@ -65,4 +65,18 @@ function updatePackage($id, $data){
     return true;
 }
 
+function deletePackage($id){
+	$conn = db_conn();
+    $selectQuery = "DELETE FROM `user_info` WHERE `ID` = ?";
+    try{
+        $stmt = $conn->prepare($selectQuery);
+        $stmt->execute([$id]);
+    }catch(PDOException $e){
+        echo $e->getMessage();
+    }
+    $conn = null;
+
+    return true;
+}
+
 ?>
