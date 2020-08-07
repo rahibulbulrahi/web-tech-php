@@ -30,6 +30,20 @@ function showStudent($id){
     return $row;
 }
 
+function searchUser($user_name){
+    $conn = db_conn();
+    $selectQuery = "SELECT * FROM `user_info` WHERE Username LIKE '%$user_name%'";
+
+    
+    try{
+        $stmt = $conn->query($selectQuery);
+    }catch(PDOException $e){
+        echo $e->getMessage();
+    }
+    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $rows;
+}
+
 
 function addStudent($data){
 	$conn = db_conn();

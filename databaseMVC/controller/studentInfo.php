@@ -10,4 +10,3 @@ function fetchStudent($id){
 	return showStudent($id);
 
 }
-?>
