@@ -72,7 +72,7 @@
     <?php include('header.php');?>
     <form id="login" method="post" action="profile.php">
             <fieldset style="border: black 2px solid;">
-                <legend><b>CUSTOMER LOG IN</b></legend>
+                <legend><b>EMPLOYEE LOG IN</b></legend>
 
                 <div class="login">
                     
@@ -86,14 +86,10 @@
                     <span class="checkamrk">
                     <label class="rememberme">Remember me
                     </span>
-                    <a href="forgetpass.php" class="link">Forget Password?</a>
                 </div><br>
                 <input class="button "type="submit" value="Submit" name="submit">
-                
-                
-                <a href="registration.php" class="link">Didn't have account? Register Here..</a>
-                <a href="employeelogin.php" class="link">Employee Login..</a>
-                
+                <a href="forgetpass.php" class="link">Forget Password?</a>
+
             </fieldset>
         </form>
 
