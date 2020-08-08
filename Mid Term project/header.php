@@ -83,11 +83,11 @@
             </a>
             <nav>
                 <ul>
-                    <li><a href="#section-1">Home</a></li>
-                    <li><a href="#section-2">About</a></li>
-                    <li><a href="#section-3">Top tours</a></li>
-                    <li><a href="#section-4">Guides</a></li>
-                    <li><a href="#section-5">Contact</a></li>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="tour.php">Top tours</a></li>
+                    <li><a href="guide.php">Guides</a></li>
+                    <li><a href="register.php">Register</a></li>
                 </ul>
             </nav>
             </div>
