@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
     <style>
-    
+        body
+        {
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+        .slideshow
+        {
+            width: 700px;
+            height: 400px;
+            overflow: hidden;
+        }
     </style>
 
     <body>
