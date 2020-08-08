@@ -9,7 +9,7 @@
             margin: 0px;
             font-family: Calibri;
             font-weight: 400;
-            background: #f2f2f2;
+            background: lightgray;
         }
     </style>
     <body>
