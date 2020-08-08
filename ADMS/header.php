@@ -6,7 +6,6 @@
             margin: 0px;
             font-family: Calibri;
             font-weight: 400;
-            background-color: 	#cccccc;
         }
         div.a
         {
