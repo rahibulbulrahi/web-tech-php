@@ -23,9 +23,10 @@
         }
         input[type="text"]
         {
+            width: 100%;
             overflow: hidden;
             font-size: 15px;
-            padding: 5px 0;
+            padding: 10px 0;
             border: none;
             outline: none;
             background: none;
@@ -34,9 +35,10 @@
         }
         input[type="password"]
         {
+            width: 100%;
             overflow: hidden;
             font-size: 15px;
-            padding: 5px 0;
+            padding: 10px 0;
             border: none;
             outline: none;
             background: none;
@@ -73,13 +75,13 @@
                 <legend><b>LOG IN</b></legend>
 
                 <div class="login">
-                    <label for="uname"><b>User Name</b></label>
-                    : <input type="text" id="uname" name="uname" size="55px" placeholder="name*" required><br>
+                    
+                    <input type="text" id="uname" name="uname" size="55px" placeholder="name*" required><br>
 
-                    <label for="password"><b>Password</b></label>
-                    : <input type="password" id="password" name="password" size="55px" placeholder="password*" required>
-                    <hr>
-
+                   
+                    <input type="password" id="password" name="password" size="55px" placeholder="password*" required>
+                    
+                    <br><br>
                     <input type="checkbox" name="rememberme" value="rememberme">
                     <span class="checkamrk">
                     <label class="rememberme">Remember me
@@ -89,6 +91,6 @@
                 <a href="forgetpass.php" class="link">Forget Password?</a>
             </fieldset>
         </form>
-        
+
     </body>
 </html>
