@@ -83,7 +83,6 @@ function searchPackage($location){
     $conn = db_conn();
     $selectQuery = "SELECT * FROM `package` WHERE location LIKE '%$location%'";
 
-    
     try{
         $stmt = $conn->query($selectQuery);
     }catch(PDOException $e){
