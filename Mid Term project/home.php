@@ -43,6 +43,7 @@
         {
             width: 100%;
             height: 100%;
+            display: flex;
         }
         div.slide
         {
@@ -53,6 +54,18 @@
         {
             width: 100%;
             height: 100%;
+        }
+        #r1:checked ~ .s1
+        {
+            margin-left: 0;
+        }
+        #r2:checked ~ .s1
+        {
+            margin-left: -20%;
+        }
+        #r3:checked ~ .s1
+        {
+
         }
     </style>
 
@@ -67,16 +80,16 @@
             <input type="radio" name="r" id="r3" >
         
     
-            <div class="slide">
+            <div class="slide s1">
                 <img src="images/1.png" alt="">
             </div>
             
             <div class="slide">
-                <img src="images/2.png" alt="">
+                <img src="images/2.jpg" alt="">
             </div>
 
             <div class="slide">
-                <img src="images/3.png" alt="">
+                <img src="images/3.jpg" alt="">
             </div>
 
             <div class="navigation">
