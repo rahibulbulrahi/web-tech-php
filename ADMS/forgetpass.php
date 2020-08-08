@@ -14,7 +14,7 @@
             margin: auto;
             padding: 50px;
         }
-        .login label
+        .forgetpass label
         {
             width: 120px;
             display: inline-block;
@@ -23,10 +23,9 @@
         }
         input[type="text"]
         {
-            width: 100%;
             overflow: hidden;
             font-size: 15px;
-            padding: 10px 0;
+            padding: 5px 0;
             border: none;
             outline: none;
             background: none;
@@ -35,10 +34,9 @@
         }
         input[type="password"]
         {
-            width: 100%;
             overflow: hidden;
             font-size: 15px;
-            padding: 10px 0;
+            padding: 5px 0;
             border: none;
             outline: none;
             background: none;
@@ -56,43 +54,23 @@
         {
             border: 2px solid black ;
         }
-        a
-        {
-            text-decoration: none;
-            color: black;
-            padding: 0 5%;
-        }
-        .link:hover
-        {
-            color: red;
-        }
+     
     </style>
 
     <body>
     <?php include('header.php');?>
-    <form id="login" method="post" action="profile.php">
+    <form id="forgetpass" method="get" action="changepass.php">
             <fieldset style="border: black 2px solid;">
-                <legend><b>LOG IN</b></legend>
+                <legend><b>FORGET PASSWORD</b></legend>
 
-                <div class="login">
-                    
-                    <input type="text" id="uname" name="uname" size="55px" placeholder="name*" required><br>
+                <div class="forgetpass">
+                    <label for="email"><b>Email</b></label>
+                    : <input type="text" id="email" name="email" size="55px" placeholder="email*"><br>
 
-                   
-                    <input type="password" id="password" name="password" size="55px" placeholder="password*" required>
-                    
-                    <br><br>
-                    <input type="checkbox" name="rememberme" value="rememberme">
-                    <span class="checkamrk">
-                    <label class="rememberme">Remember me
-                    </span>
                 </div><br>
-                <input class="button "type="submit" value="Submit" name="submit">
-                <a href="forgetpass.php" class="link">Forget Password?</a>
-
-                <a href="registration.php" class="link">Didn't have account? Register Here..</a>
+                <input class="button "type="submit" value="Search" name="submit">
+                
             </fieldset>
         </form>
-
     </body>
 </html>
