@@ -12,6 +12,7 @@
         {
             width: 50%;
             margin: auto;
+            padding: 20px 10%;
         }
         div.registration
         {
@@ -26,9 +27,10 @@
         }
         input[type="text"]
         {
+            width: 100%;
             overflow: hidden;
             font-size: 15px;
-            padding: 5px 0;
+            padding: 10px 0;
             border: none;
             outline: none;
             background: none;
@@ -37,9 +39,10 @@
         }
         input[type="password"]
         {
+            width: 100%;
             overflow: hidden;
             font-size: 15px;
-            padding: 5px 0;
+            padding: 10px 0;
             border: none;
             outline: none;
             background: none;
@@ -60,23 +63,18 @@
             border: 2px solid grey;
             padding: 5px;cursor: pointer;
         }
-        div.date
+        .address textarea
         {
-            text-align: center;
-            float: left;
-            margin: 2px;
-        }
-        div.month
-        {
-            text-align: center;
-            float: left;
-            margin: 2px;
-        }
-        div.year
-        {
-            text-align: center;
-            float: left;
-            margin: 2px;
+            background: transparent;
+            width: 100%;
+            overflow: hidden;
+            font-size: 15px;
+            padding: 10px 0;
+            border: none;
+            outline: none;
+            background: none;
+            color:black;
+            border-bottom: 1px solid black;
         }
         .button:hover 
         {
@@ -92,26 +90,23 @@
                 
                 <div class="registration" method="POST" action="">
 
-                <label for="name">Name</label>
-                : <input type="text" id="name" name="name" size="55px" placeholder="name*" required><br>
+                <input type="text" id="name" name="name" size="60px" placeholder="Name*" required><br>
                 
-                <label for="email">Email</label>
-                : <input type="text" id="email" name="email" size="55px" placeholder="email*" required><br>
+                <input type="text" id="email" name="email" size="55px" placeholder="Email*" required><br>
                 
-                <label for="uname">User name:</label>
-                : <input type="text" id="uname" name="uname" size="55px" placeholder="user name*" required><br>
+                <input type="text" id="uname" name="uname" size="55px" placeholder="User Name*" required><br>
                 
-                <label for="password">Password:</label>
-                : <input type="password" id="password" name="password" size="55px" placeholder="password*" required><br>
+                <input type="password" id="password" name="password" size="55px" placeholder="Password*" required><br>
                 
-                <label for="cpassword">Confirm Pasword:</label>
-                : <input type="password" id="cpassword" name="cpassword" size="55px" placeholder="confirm password*" required><br>
-            
+                <input type="password" id="cpassword" name="cpassword" size="55px" placeholder="Confirm Password*" required><br>
+
+                <div class="address">
+                <textarea rows="4" cols="50" placeholder="Enter your Address here...*"></textarea>
+                </div>
+                <br>
                 <div class="gender">
                 
-                <fieldset style="border: black 2px solid;">
-                <legend><b>GENDER</b></legend>
-                
+                <label class="gender"><b>GENDER</b></label>
                 <input type="radio" name="gender" value="Male">
                 <span class="radiobtn"></span>
                 <label class="male"><b>Male</b></label>
@@ -124,29 +119,9 @@
                 <span class="radiobtn"></span>
                 <label class="other">Other</label>
 
-                </fieldset>
-                </div>
-
-                <div class="dob">
-                <fieldset style="border: black 2px solid;">
-                <legend><b>DATE OF BIRTH</b></legend>
                 
-                <div class ="date">
-                    <input type="text" id="date" name="dob" value="date" placeholder="date" style="text-align: center;" size="5"> / 
-                </div>
-
-                <div class="month">
-                    <input type="text" id="month" name="dob" value="mmoth" placeholder="month" style="text-align: center;" size="5"> /
-                </div>
-
-                <div class="year">
-                    <input type="text" id="year" name="dob" value="year" placeholder="year" style="text-align: center;" size="6">
-                </div>
-                
-                <pre> <i>(dd/mm/yyyy)</i></pre>
-
-                </fieldset>
-                </div><br>
+             </div>
+                    </div><br>
                 <input class="button" type="submit" value="Submit" name="submit">
                 <input class="button" type="reset" value="Reset Form" name="reset">
             </div>
