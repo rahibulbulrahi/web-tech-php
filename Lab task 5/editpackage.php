@@ -3,7 +3,7 @@
 require_once 'controller/packageinfo.php';
 $travel_info = fetchPackage($_GET['id']);
 
- ?>
+?>
 <!DOCTYPE html>
 <html>
 <style>
