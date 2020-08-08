@@ -15,7 +15,7 @@
         }
         header
         {
-            background: #b3b3b3;
+            background: #d9d9d9;
         }
         header::after
         {
