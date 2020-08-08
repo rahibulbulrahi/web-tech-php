@@ -6,6 +6,7 @@
             margin: 0px;
             font-family: Calibri;
             font-weight: 400;
+            background-color: 	#cccccc;
         }
         div.a
         {
@@ -74,13 +75,14 @@
         {
             width: 100%;
         }
+      
     </style>
     <bodY>
         <header>
         <div class ="a">
-            <a href="home.php">
-            <img src="logo/travel.png" alt="logo" width="200px" height="30px" class="logo">
-            </a>
+           
+            <label for="welcome" class="logo" style="font-size:20px"><b>WELCOME TO EASY FOOD DELIVERY SYSTEM</b></label> 
+       
             <nav>
                 <ul>
                     <li><a href="home.php">Home</a></li>
