@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+        <title>Forget Password</title>
+    </head>
     <style>
         body
         {

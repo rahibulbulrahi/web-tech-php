@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+        <title>Employee login</title>
+    </head>
     <style>
         body
         {
