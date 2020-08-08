@@ -6,7 +6,12 @@
 
     <body>
     <?php include('header.php');?>
-        <h1>This is a travel management website</h1>
+        
+    <div id="section-1" class="section">
+        <img src="images/banner.png" alt="">
+    
+    </div>
+    
     <?php include('footer.php');?>
     </body>
 </html>
