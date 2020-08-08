@@ -32,7 +32,7 @@
         }
         .bar:hover
         {
-            border: 2px solid black;
+            border: 2px solid #3f93cc;
         }
         input[name="r"]
         {
