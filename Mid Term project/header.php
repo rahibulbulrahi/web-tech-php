@@ -54,7 +54,7 @@
         }
         nav a:hover
         {
-            color: #000;
+            color: #3f93cc;
         }
         nav a::before
         {
@@ -62,7 +62,7 @@
             display: block;
             height: 5px;
             width: 100%;
-            background-color: #444;
+            background-color: #3f93cc;
 
             position: absolute;
             top: 20%;
