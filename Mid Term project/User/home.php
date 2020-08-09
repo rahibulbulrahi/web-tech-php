@@ -24,6 +24,7 @@
             width: 100px ;
             background: none;
             border: 2px solid grey;
+            border-radius: 5px;
             padding: 5px;cursor: pointer;
         }
         .button:hover 
@@ -61,6 +62,9 @@
     </form>
     </div>
     
+    <div class="planning">
+        
+    </div>
         
     
 
