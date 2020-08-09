@@ -46,7 +46,7 @@
             margin: auto;
             padding: 60px 10%;
         }
-        div.planning
+        div.about
         {
             font-family: 'Consolas';
             text-align: center;
@@ -58,13 +58,14 @@
             width: 90%;
             margin: auto;
         }
-        div.start_tour
+        div.about_us
         {
-            background: #ff4d4d;
-            width: 50%;
-            height: 150px;
-            margin-left: 65px;
-            border-radius: 12px;
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-rows: 500px;
+            grid-template-columns: 500px 500px;
+            text-align: justify;
         }
     </style>
 
@@ -81,12 +82,27 @@
     </form>
     </div>
     
-    <div class="planning">
-        <h1>Tour Planning</h1>
+    <div class="about">
+        <h1>About US</h1>
         <hr class="line"><br>
-
-        <div class="start_tour">
+    </div>
+    
+    <div class="about_us">
+        <div class="destination">
             
+        <h3>Best Destination</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l
+                aboris nisi ut aliquip ex ea commodo consequat.<p>
+        
+        </div>
+        
+        <div class="trust">
+      
+        <h3>Trust & Safety</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l
+                aboris nisi ut aliquip ex ea commodo consequat.<p>
         </div>
     </div>
 
