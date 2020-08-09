@@ -3,40 +3,94 @@
     <style>
         body
         {
+            margin: 0px;
+            font-family: Calibri;
+            font-weight: 400;
+        }
+        div.a
+        {
+            width: 80%;
+            margin: 0 auto;
+            
+        }
+        header
+        {
+            background: #fff;
+        }
+        header::after
+        {
+            content: '';
+            display: table;
+            clear:both;
+        }
+        .logo
+        {
+            float: left;
+            padding: 10px 0;
+        }
+        nav
+        {
+            float: right;
+        }
+        nav ul
+        {
             margin: 0;
             padding: 0;
-            font-family: 'Poppins';
+            list-style: none;
         }
-        div.navbar
+        nav li
         {
-            position: fixed;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-            background-color: #fff;
+            display: inline-block;
+            margin-left: 65px;
+            padding-top: 20px;
+            position: relative;
+        }
+        nav a
+        {
+            color: #444;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+        nav a:hover
+        {
+            color: #000;
+        }
+        nav a::before
+        {
+            content: '';
+            display: block;
+            height: 5px;
             width: 100%;
-            height: 70px;
-            z-index: 1;
-        }
-        .nav
-        {
-            display: flex;
-            justify-content: center;
+            background-color: #444;
+
+            position: absolute;
+            top: 20%;
+            width: 0%;
             
+            transition: all ease-in-out 200ms;
+        }
+        nav a:hover::before
+        {
+            width: 100%;
         }
     </style>
     <bodY>
-        <div class ="navbar">
-            <a href="home.php"><img src="logo/travel.png" alt="logo" width="200px" height="30px" class="logo"></a>
-                <ul class="nav">
+        <header>
+        <div class ="a">
+            <a href="home.php">
+            <img src="logo/travel.png" alt="logo" width="200px" height="30px" class="logo">
+            </a>
+            <nav>
+                <ul>
                     <li><a href="home.php">Home</a></li>
                     <li><a href="tour.php">Tour</a></li>
-                    <li><a href="guide.php">Guide</a></li>
+                    <li><a href="guide.php">guide</a></li>
                     <li><a href="login.php">Login</a></li>
-                    <li><a href="registration.php">Registration</a></li>
+                    <li><a href="register.php">Registration</a></li>
                 </ul>
-        </div>
+            </nav>
+            </div>
+        </header>
     </bodY>
 </html>
