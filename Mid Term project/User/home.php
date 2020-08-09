@@ -58,6 +58,14 @@
             width: 90%;
             margin: auto;
         }
+        div.start_tour
+        {
+            background: #ff4d4d;
+            width: 50%;
+            height: 150px;
+            margin-left: 65px;
+            border-radius: 12px;
+        }
     </style>
 
     <body>
@@ -75,8 +83,13 @@
     
     <div class="planning">
         <h1>Tour Planning</h1>
-        <hr class="line">
+        <hr class="line"><br>
+
+        <div class="start_tour">
+            
+        </div>
     </div>
+
         
     
 
