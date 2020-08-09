@@ -7,66 +7,7 @@
             padding: 0;
             background: white;
         }
-        div.slideshow
-        {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-        div.navigation
-        {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-        }
-        .bar
-        {
-            width: 50px;
-            height: 10px;
-            border: 2px solid grey;
-            border-radius: 5px;
-            margin: 6px;
-            cursor: pointer;
-        }
-        .bar:hover
-        {
-            border: 2px solid #3f93cc;
-        }
-        input[name="r"]
-        {
-            position: absolute;
-            visibility: hidden;
-        }
-        div.slides
-        {
-            width: 100%;
-            height: 100%;
-            display: flex;
-        }
-        div.slide
-        {
-            width: 100%;
-            transition: 0.6s;
-        }
-        .slide img
-        {
-            width: 100%;
-            height: 100%;
-        }
-        #r1:checked ~ .s1
-        {
-            margin-left: 0;
-        }
-        #r2:checked ~ .s1
-        {
-            margin-left: -20%;
-        }
-        #r3:checked ~ .s1
-        {
-
-        }
+        
     </style>
 
     <body>
@@ -74,30 +15,6 @@
     
     <div class="slideshow">
         
-        <div class="slides">
-            <input type="radio" name="r" id="r1" checked>
-            <input type="radio" name="r" id="r2" >
-            <input type="radio" name="r" id="r3" >
-        
-    
-            <div class="slide s1">
-                <img src="images/1.png" alt="">
-            </div>
-            
-            <div class="slide">
-                <img src="images/2.jpg" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="images/3.jpg" alt="">
-            </div>
-
-            <div class="navigation">
-            <label for="r1" class="bar"></label>
-            <label for="r2" class="bar"></label>
-            <label for="r3" class="bar"></label>
-            </div>
-        </div>
     </div>
 
    
