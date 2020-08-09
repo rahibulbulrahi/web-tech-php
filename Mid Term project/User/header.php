@@ -41,7 +41,7 @@
         nav li
         {
             display: inline-block;
-            margin-left: 65px;
+            margin-left: 50px;
             padding-top: 20px;
             position: relative;
         }
@@ -84,6 +84,9 @@
             <nav>
                 <ul>
                     <li><a href="home.php">Home</a></li>
+                    <li><a href="hotel.php">hotel</a></li>
+                    <li><a href="package.php">Package</a></li>
+                    <li><a href="flight.php">Flight</a></li>
                     <li><a href="tour.php">Tour</a></li>
                     <li><a href="guide.php">guide</a></li>
                     <li><a href="login.php">Login</a></li>
