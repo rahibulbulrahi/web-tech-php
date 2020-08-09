@@ -7,72 +7,17 @@
             font-family: Calibri;
             font-weight: 400;
         }
-        div.a
-        {
-            width: 80%;
-            margin: 0 auto;
-            
-        }
         header
         {
-            background: WHite;
-        }
-        header::after
-        {
-            content: '';
-            display: table;
-            clear:both;
-        }
-        .logo
-        {
-            float: left;
-            padding: 10px 0;
-        }
-        nav
-        {
-            float: right;
-        }
-        nav ul
-        {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        nav li
-        {
-            display: inline-block;
-            margin-left: 65px;
-            padding-top: 20px;
-            position: relative;
-        }
-        nav a
-        {
-            color: #444;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 15px;
-        }
-        nav a:hover
-        {
-            color: #3f93cc;
-        }
-        nav a::before
-        {
-            content: '';
-            display: block;
-            height: 5px;
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            background-color: #3f93cc;
-
-            position: absolute;
-            top: 20%;
-            width: 0%;
-            
-            transition: all ease-in-out 200ms;
-        }
-        nav a:hover::before
-        {
-            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.6s;
+            padding: 40px 100px;
         }
     </style>
     <bodY>
