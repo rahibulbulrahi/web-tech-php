@@ -46,6 +46,11 @@
             margin: auto;
             padding: 60px 10%;
         }
+        div.planning
+        {
+            font-family: 'Consolas';
+            text-align: center;
+        }
         
     </style>
 
@@ -63,7 +68,7 @@
     </div>
     
     <div class="planning">
-        
+        <h1>Tour Planning</h1>
     </div>
         
     
