@@ -5,7 +5,7 @@
         {
             margin: 0;
             padding: 0;
-            background: #000;
+            background: #fff;
         }
         
         
@@ -14,9 +14,9 @@
     <body>
     <?php include('header.php');?>
     
-    <div class="slideshow">
+    
         
-    </div>
+    
 
    
     

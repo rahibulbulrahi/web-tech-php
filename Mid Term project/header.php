@@ -1,72 +1,42 @@
 <!DOCTYPE html>
 <html>
     <style>
-        *
-        {
-            box-sizing: border-box;
-            font-family: 'Poppins' sans-serif;
-        }
         body
         {
-            margin: 0px;
-            font-family: Calibri;
-            font-weight: 400;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins';
         }
-        header
+        div.navbar
         {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: 0.6s;
-            padding: 40px 100px;
-        }
-        header .logo
-        {
-            position: relative;
-            font-weight: 700;
-            color: #fff;
-            text-decoration: none;
-            font-size: 2em;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: 0.6s;
-        }
-        header ul
-        {
-            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: #fff;
+            width: 100%;
+            height: 70px;
+            z-index: 1;
         }
-        header ul li
+        .nav
         {
-            position: relative;
-            list-style: none;
-        }
-        header ul li a
-        {
-            position: relative;
-            margin: 0 15px;
-            text-decoration: none;
-            color: #fff;
+            display: flex;
+            justify-content: center;
+            
         }
     </style>
     <bodY>
-        <header>
-            <a href="home.php" class="logo">
-            Logo
-            </a>
-                <ul>
+        <div class ="navbar">
+            <a href="home.php"><img src="logo/travel.png" alt="logo" width="200px" height="30px" class="logo"></a>
+                <ul class="nav">
                     <li><a href="home.php">Home</a></li>
-                    <li><a href="about.php">About</a></li>
-                    <li><a href="tour.php">Top tours</a></li>
-                    <li><a href="guide.php">Guides</a></li>
-                    <li><a href="register.php">Register</a></li>
+                    <li><a href="tour.php">Tour</a></li>
+                    <li><a href="guide.php">Guide</a></li>
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="registration.php">Registration</a></li>
                 </ul>
-        </header>
+        </div>
     </bodY>
 </html>
