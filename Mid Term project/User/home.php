@@ -51,7 +51,13 @@
             font-family: 'Consolas';
             text-align: center;
         }
-        
+        hr.line 
+        {
+            border: 3px solid Black;
+            border-radius: 5px;
+            width: 90%;
+            margin: auto;
+        }
     </style>
 
     <body>
@@ -69,6 +75,7 @@
     
     <div class="planning">
         <h1>Tour Planning</h1>
+        <hr class="line">
     </div>
         
     

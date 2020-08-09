@@ -84,7 +84,7 @@
             <nav>
                 <ul>
                     <li><a href="home.php">Home</a></li>
-                    <li><a href="hotel.php">hotel</a></li>
+                    <li><a href="hotels.php">hotel</a></li>
                     <li><a href="package.php">Package</a></li>
                     <li><a href="flight.php">Flight</a></li>
                     <li><a href="tour.php">Tour</a></li>
