@@ -42,7 +42,7 @@
         div.search
         {
             font-family: 'cooper';
-            width: 50%;
+            width: 60%;
             margin: auto;
             padding: 60px 10%;
         }
@@ -60,12 +60,57 @@
         }
         div.about_us
         {
-            width: 90%;
+            width: 80%;
             margin: auto;
             display: grid;
-            grid-template-rows: 500px;
+            grid-template-rows: auto;
             grid-template-columns: 500px 500px;
             text-align: justify;
+            grid-gap: 50px;
+        }
+        div.tour
+        {
+             font-family: 'Consolas';
+            text-align: center;
+        }
+        div.domestic
+        {
+            width: 300px;
+            height: 150px;
+            background-color: #ff4757;
+            border-radius: 10px;
+            text-align: center;
+        }
+        div.international
+        {
+            width: 300px;
+            height: 150px;
+            background-color: #ff4757;
+            border-radius: 10px;
+            text-align: center;
+        }
+        div.package_tour
+        {
+            width: 300px;
+            height: 150px;
+            background-color: #ff4757;
+            border-radius: 10px;
+            text-align: center;
+        }
+        div.trip
+        {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 350px 350px 350px;
+            text-align: justify;
+            grid-gap: 50px;
+        }
+        a
+        {
+            color: black;
+            padding: 0 5%;
         }
     </style>
 
@@ -105,11 +150,25 @@
                 aboris nisi ut aliquip ex ea commodo consequat.<p>
         </div>
     </div>
-
-        
     
+    <div class="tour">
+        <h1>Top Tour</h1>
+        <hr class="line"><br>
+    </div>
+        
+    <div class="trip">
+        <div class="domestic">
+            <h3>For Domestic tour visit <a href="">Here</a></h3>
+        </div>
 
-   
+        <div class="international">
+            <h3>For International tour visit <a href="">Here</a></h3>
+        </div>
+        
+        <div class="package_tour">
+            <h3>For Package tour Program visit <a href="">Here</a></h3>
+        </div>
+    </div>
     
     <?php include('footer.php');?>
     </body>
