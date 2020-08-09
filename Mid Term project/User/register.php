@@ -97,7 +97,7 @@
             <input type="password" id="password" name="password" size="55px" placeholder="Password*" required><br>
 
             <input type="password" id="cpassword" name="cpassword" size="55px" placeholder="Confirm Password*" required><br>
-            
+
             <br>
             <div class="gender">
 

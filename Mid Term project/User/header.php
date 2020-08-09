@@ -16,6 +16,7 @@
         header
         {
             background: #fff;
+            padding: 20px;
         }
         header::after
         {
