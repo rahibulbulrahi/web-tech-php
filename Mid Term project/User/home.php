@@ -19,6 +19,17 @@
             color:black;
             border-bottom: 1px solid black;
         }
+        input[type="submit"]
+        {
+            width: 100px ;
+            background: none;
+            border: 2px solid grey;
+            padding: 5px;cursor: pointer;
+        }
+        .button:hover 
+        {
+            border: 2px solid black ;
+        }
         div.find
         {
             background: #b3ffe6;
@@ -44,7 +55,8 @@
     <form>
         <div class="search">
             <h1><b>FIND THE GOOD TRIP HERE</b></h1>
-            <input type="search" id="search" name="search" size="60px" placeholder="Where to go?*" required><br>
+            <input type="search" id="search" name="search" size="60px" placeholder="Where to go?*" required>
+            <input class="button" type="submit" value="Search" name="search">
         </div>
     </form>
     </div>
