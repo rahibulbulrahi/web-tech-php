@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
     <style>
+        *
+        {
+            box-sizing: border-box;
+            font-family: 'Poppins' sans-serif;
+        }
         body
         {
             margin: 0px;
@@ -19,14 +24,42 @@
             transition: 0.6s;
             padding: 40px 100px;
         }
+        header .logo
+        {
+            position: relative;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.6s;
+        }
+        header ul
+        {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header ul li
+        {
+            position: relative;
+            list-style: none;
+        }
+        header ul li a
+        {
+            position: relative;
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+        }
     </style>
     <bodY>
         <header>
-        <div class ="a">
-            <a href="home.php">
-            <img src="logo/travel.png" alt="logo" width="200px" height="30px" class="logo">
+            <a href="home.php" class="logo">
+            Logo
             </a>
-            <nav>
                 <ul>
                     <li><a href="home.php">Home</a></li>
                     <li><a href="about.php">About</a></li>
@@ -34,8 +67,6 @@
                     <li><a href="guide.php">Guides</a></li>
                     <li><a href="register.php">Register</a></li>
                 </ul>
-            </nav>
-            </div>
         </header>
     </bodY>
 </html>
