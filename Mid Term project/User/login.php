@@ -20,6 +20,11 @@
             background-color: #fff;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
         }
+        a
+        {
+            color: #777;
+            text-decoration: none;
+        }
         div.login
         {
             position: absolute;
@@ -27,11 +32,14 @@
             left: 0;
             box-sizing: border-box;
             padding: 40px;
-            width: 300px;
+            width: 600px;
             height: 400px;
+            background-image: url(2.jpg);
+            background-size: 600px 400px;
         }
         input[type="text"],input[type="password"]
         {
+            overflow: hidden;
             display: block;
             box-sizing: border-box;
             margin-bottom: 20px;
@@ -40,6 +48,7 @@
             height: 32px;
             border: none;
             outline: none;
+            background: none;
             border-bottom: 1px solid #aaa;
             font-family: sans-serif;
             font-weight: 400;
@@ -79,9 +88,10 @@
             
             <input type="checkbox" name="rememberme" value="rememberme">
             <span class="checkamrk"><label class="rememberme">Remember me</span>
+            
         <br><br>
             <input class="button "type="submit" value="Submit" name="submit">
-            <a href="forgetpass.php" class="link">Forget Password?</a>
+            <a href="forgetpass.php" class="link"> Forget Password?</a>
         </div>
     </div>
     <?php include('footer.php');?>
