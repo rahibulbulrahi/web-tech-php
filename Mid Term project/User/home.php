@@ -36,7 +36,7 @@
             background: #b3ffe6;
             width: 90%;
             height: 300px;
-            margin: auto;
+            margin: 5% auto;
             border-radius: 12px;
         }
         div.search

@@ -17,6 +17,7 @@
         {
             background: #fff;
             padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
         }
         header::after
         {
