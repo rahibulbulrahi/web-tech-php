@@ -19,6 +19,24 @@
         {
             text-align: center;
         }
+        div.international_trip
+        {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 350px 350px 350px;
+            text-align: justify;
+            grid-gap: 50px;
+        }
+        div.inter_trip
+        {
+            width: 300px;
+            height: 150px;
+            background-color: #ff4757;
+            border-radius: 10px;
+            text-align: center;
+        }
       
     </style>
 
@@ -31,9 +49,30 @@
     </div>
     
     <div class="international_trip">
-        <div class="dubai">
-            
+        <div class="inter_trip">
+            <h3>For Domestic tour visit <a href="">Learn More</a></h3>
         </div>
+
+        <div class="inter_trip">
+            <h3>For International tour visit <a href="">Learn More</a></h3>
+        </div>
+
+        <div class="inter_trip">
+            <h3>For International tour visit <a href="">Learn More</a></h3>
+        </div>
+
+        <div class="inter_trip">
+            <h3>For International tour visit <a href="">Learn More</a></h3>
+        </div>
+
+        <div class="inter_trip">
+            <h3>For International tour visit <a href="">Learn More</a></h3>
+        </div>
+
+        <div class="inter_trip">
+            <h3>For International tour visit <a href="">Learn More</a></h3>
+        </div> 
+        
     </div>
     
    
