@@ -15,11 +15,11 @@
             width: 90%;
             margin: auto;
         }
-        div.international
+        div.trip
         {
             text-align: center;
         }
-        div.international_trip
+        div.trip_content
         {
             width: 80%;
             margin: auto;
@@ -37,40 +37,77 @@
             border-radius: 10px;
             text-align: center;
         }
+        a
+        {
+            color: black;
+            padding: 0 5%;
+        }
       
     </style>
 
     <body>
     <?php include('header.php');?>
     
-    <div class="international">
+    <div class="trip">
         <h1>International</h1><br>
         <hr class="line"><br>
     </div>
     
-    <div class="international_trip">
+    <div class="trip_content">
         <div class="inter_trip">
-            <h3>For Domestic tour visit <a href="">Learn More</a></h3>
+            <h3>For visit Dubai<a href="">Learn More</a></h3>
         </div>
 
         <div class="inter_trip">
-            <h3>For International tour visit <a href="">Learn More</a></h3>
+            <h3>For visit Singapore <a href="">Learn More</a></h3>
         </div>
 
         <div class="inter_trip">
-            <h3>For International tour visit <a href="">Learn More</a></h3>
+            <h3>For visit Malaysia <a href="">Learn More</a></h3>
         </div>
 
         <div class="inter_trip">
-            <h3>For International tour visit <a href="">Learn More</a></h3>
+            <h3>For Visit Thailand<a href="">Learn More</a></h3>
         </div>
 
         <div class="inter_trip">
-            <h3>For International tour visit <a href="">Learn More</a></h3>
+            <h3>For Visit London<a href="">Learn More</a></h3>
         </div>
 
         <div class="inter_trip">
-            <h3>For International tour visit <a href="">Learn More</a></h3>
+            <h3>For Visit India <a href="">Learn More</a></h3>
+        </div> 
+        
+    </div>
+
+    <div class="trip">
+        <h1>Domestic</h1><br>
+        <hr class="line"><br>
+    </div>
+    
+    <div class="trip_content">
+        <div class="inter_trip">
+            <h3>For visit Dubai<a href="">Learn More</a></h3>
+        </div>
+
+        <div class="inter_trip">
+            <h3>For visit Singapore <a href="">Learn More</a></h3>
+        </div>
+
+        <div class="inter_trip">
+            <h3>For visit Malaysia <a href="">Learn More</a></h3>
+        </div>
+
+        <div class="inter_trip">
+            <h3>For Visit Thailand<a href="">Learn More</a></h3>
+        </div>
+
+        <div class="inter_trip">
+            <h3>For Visit London<a href="">Learn More</a></h3>
+        </div>
+
+        <div class="inter_trip">
+            <h3>For Visit India <a href="">Learn More</a></h3>
         </div> 
         
     </div>
