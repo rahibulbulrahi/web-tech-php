@@ -92,19 +92,21 @@
     <?php include('header.php');?>
 
         <div id="login-box">
+        <form action="registrationcontrol.php" action="POST">
             <div class="left-box">
                 <h1>Sign Up</h1>
 
                 <input type="text" name="username" placeholder="Username*" required/>
                 <input type="text" name="email" placeholder="Email*" required/>
                 <input type="password" name="password" placeholder="Password*" required/>
-                <input type="password" name="password2" placeholder="Retype Password*" required/>
+                <input type="password" name="re_password" placeholder="Retype Password*" required/>
 
                 <input type="submit" name="signup-button" value="Sign Up"/>
             </div>
             <div class="right-box">
                
             </div>
+            </form>
         </div>
     </body>
 </html>

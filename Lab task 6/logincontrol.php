@@ -23,9 +23,18 @@
 
         $query = mysqli_query($con,$sql);
         
-        $_SESSION['user'] = $username;
-        header('location:dashboard.php');
-        
+        $row = mysqli_num_rows($query);
+        if($row == 1)
+        {
+            echo "Login Complete";
+            $_SESSION['user'] = $username;
+             header('location:dashboard.php');
+        }
+        else
+        {
+            echo "login Failed";
+            header('location:login.php');
+        }
         
     }
 

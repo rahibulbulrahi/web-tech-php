@@ -87,12 +87,10 @@
     <div id="login-box">
         <form action="logincontrol.php"  method="POST">
         <div class="login">
-            <input type="text" id="uname" name="uname" placeholder="name*" value="" required>
+            <input type="text" id="uname" name="uname" placeholder="name*" value="" autocomplete="off" required>
 
-            <input type="password" id="password" name="password" placeholder="password*" value="" required>
+            <input type="password" id="password" name="password" placeholder="password*" value="" autocomplete="off" required>
             
-            <input type="checkbox" name="rememberme" value="rememberme">
-            <span class="checkamrk"><label class="rememberme">Remember me</span>
             
         <br><br>
             <input class="button "type="submit" value="Submit" name="submit">
