@@ -18,6 +18,15 @@
     {
         $username = $_POST['uname'];
         $password = $_POST['password'];
+
+        $sql = "select * from login where username = '$username' and password = '$password'";
+
+        $query = mysqli_query($con,$sql);
+        
+        $_SESSION['user'] = $username;
+        header('location:dashboard.php');
+        
+        
     }
 
 ?>
