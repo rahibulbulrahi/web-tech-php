@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html>
 <head><title>Login Page</title></head>
@@ -82,10 +85,11 @@
     <?php include('header.php');?>
         
     <div id="login-box">
+        <form action="logincontrol.php"  method="POST">
         <div class="login">
-            <input type="text" id="uname" name="uname" placeholder="name*" required>
+            <input type="text" id="uname" name="uname" placeholder="name*" value="" required>
 
-            <input type="password" id="password" name="password" placeholder="password*" required>
+            <input type="password" id="password" name="password" placeholder="password*" value="" required>
             
             <input type="checkbox" name="rememberme" value="rememberme">
             <span class="checkamrk"><label class="rememberme">Remember me</span>
@@ -94,6 +98,7 @@
             <input class="button "type="submit" value="Submit" name="submit">
             <a href="forgetpass.php" class="link"> Forget Password?</a>
         </div>
+        </form>
     </div>
     </body>
 </html>
