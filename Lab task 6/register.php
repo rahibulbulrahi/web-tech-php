@@ -92,16 +92,16 @@
     <?php include('header.php');?>
 
         <div id="login-box">
-        <form action="registrationcontrol.php" action="POST">
+        <form action="" action="POST">
             <div class="left-box">
                 <h1>Sign Up</h1>
 
-                <input type="text" name="username" placeholder="Username*" value="" required/>
-                <input type="text" name="email" placeholder="Email*" value="" required/>
-                <input type="password" name="password" placeholder="Password*" value="" required/>
-                <input type="password" name="re_password" placeholder="Retype Password*" value="" required/>
+                <input type="text" name="username" placeholder="Username*" value="" autocomplete="off" required/>
+                <input type="text" name="email" placeholder="Email*" value="" autocomplete="off" required/>
+                <input type="password" name="password" placeholder="Password*" value="" autocomplete="off" required/>
+                <input type="password" name="re_password" placeholder="Retype Password*" value="" autocomplete="off" required/>
 
-                <input type="submit" name="signup-button" value="Sign Up"/>
+                <input type="submit" name="submit" value="Sign Up"/>
             </div>
             <div class="right-box">
                
@@ -109,4 +109,45 @@
             </form>
         </div>
     </body>
+
+    <?php
+    $server = "localhost";
+    $dbuser = "root";
+    $dbpassword = "";
+    $db = "lab_task6";
+
+    $con = mysqli_connect($server,$dbuser,$dbpassword,$db);
+
+    if(isset($_POST['submit']))
+        {
+            $username = mysqli_real_escape_string($con, $_POST['username']);
+            $email = mysqli_real_escape_string($con, $_POST['email']);
+            $password = mysqli_real_escape_string($con, $_POST['password']);
+            $re_password = mysqli_real_escape_string($con, $_POST['re_password']);
+            
+            $emailquery = "select * from user where email = $email";
+            $query = mysqli_query($con, $emailquery);
+
+            $emailcount = mysqli_num_rows($query);
+
+            if($emailcount>0)
+            {
+                echo "email already exist";
+            }
+            else
+            {
+                if($password == $re_password)
+                {
+                   $insertquery = "INSERT into user (username, email, password, re_password) VALUES('$username','$email','$password','$re_password') ";
+                    
+                   $iquery = mysqli_query($con,$insertquery);
+                }
+                else
+                {
+                    echo "password are not matching";
+                }
+            }
+
+        }
+    ?>
 </html>

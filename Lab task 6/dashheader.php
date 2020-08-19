@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <style>
@@ -82,12 +83,15 @@
         <div class ="a">
             <nav>
                 <ul>
-                    <li><a href="home.php">Home</a></li>
-                    <li><a href="login.php">Login</a></li>
-                    <li><a href="register.php">Registration</a></li>
+                <?php 
+                    session_start();
+                    echo "Welcome Back, ", $_SESSION['user'];
+                ?>
+                    <li><a href="home.php">LOG OUT</a></li>
                 </ul>
             </nav>
             </div>
         </header>
     </bodY>
+
 </html>

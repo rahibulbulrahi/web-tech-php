@@ -27,8 +27,8 @@
         if($row == 1)
         {
             echo "Login Complete";
-            $_SESSION['user'] = $username;
-             header('location:dashboard.php');
+            $_SESSION['user'] = $uname;
+            header('location:dashboard.php');
         }
         else
         {
