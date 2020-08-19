@@ -81,7 +81,7 @@
             padding: 40px;
             width: 300px;
             height: 400px;
-            background-image: url(1.png);
+            background-image: url(2.jpg);
             background-size: cover;
             background-position: center;
         }
@@ -157,7 +157,5 @@
             </div>
             <div class="or">OR</div>
         </div>
-
-    <?php include('footer.php');?>
     </body>
 </html>

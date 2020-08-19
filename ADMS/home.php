@@ -4,12 +4,15 @@
         <title>Food Delivery</title>
     </head>
     <style> 
-        body
+       body
         {
-            margin: 0px;
-            font-family: Calibri;
-            font-weight: 400;
-            background: lightgray;
+            margin: 0;
+            padding: 0;
+            background: #efefef;
+            font-size: 16px;
+            color: #777;
+            font-family: sans-serif;
+            font-weight: 300;
         }
     </style>
     <body>

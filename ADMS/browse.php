@@ -48,7 +48,7 @@
         
         <div class="sidebar">
             <ul>
-                <li style="font-size: 20px;"><b>--- ACCOOUNT ---</b></li>
+                <li style="font-size: 20px;"><b>--- SEARCH ---</b></li>
                 <hr class="line">
                 <li><a href=dashboard.php>Dashboard<a></li>
                 <li><a href=profile.php>Edit Profie</li>
@@ -57,10 +57,6 @@
                 <li><a href=foodhistory.php>Food Order History</li>
                 <li><a href=home.php>Log Out</a></li>
             </ul>
-        </div>
-        
-        <div class="welcome">
-            <h1>Welcome</h1>
         </div>
     </body>
 </html>

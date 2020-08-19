@@ -1,104 +1,108 @@
 <!DOCTYPE html>
 <html>
-<head>
-        <title>Customer Login</title>
-    </head>
     <style>
-        body
+      body
         {
-            margin: 0px;
-            font-family: Calibri;
-            font-weight: 400;
-            background: lightgray;
+            margin: 0;
+            padding: 0;
+            background: #efefef;
+            font-size: 16px;
+            color: #777;
+            font-family: sans-serif;
+            font-weight: 300;
         }
-        form
+        #login-box
         {
-            width: 50%;
-            margin: auto;
-            padding: 50px;
-        }
-        .login label
-        {
-            width: 120px;
-            display: inline-block;
-            text-align: left;
-            margin: 3px;
-        }
-        input[type="text"]
-        {
-            width: 100%;
-            overflow: hidden;
-            font-size: 15px;
-            padding: 10px 0;
-            border: none;
-            outline: none;
-            background: none;
-            color:black;
-            border-bottom: 1px solid black;
-        }
-        input[type="password"]
-        {
-            width: 100%;
-            overflow: hidden;
-            font-size: 15px;
-            padding: 10px 0;
-            border: none;
-            outline: none;
-            background: none;
-            color:black;
-            border-bottom: 1px solid black;
-        }
-        input[type="submit"]
-        {
-            width: 100px ;
-            background: none;
-            border: 2px solid grey;
-            padding: 5px;cursor: pointer;
-        }
-        .button:hover 
-        {
-            border: 2px solid black ;
+            position: relative;
+            margin: 5% auto;
+            width: 600px;
+            height: 400px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
         }
         a
         {
+            color: white;
             text-decoration: none;
-            color: black;
-            padding: 0 5%;
         }
-        .link:hover
+        div.login
         {
-            color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            padding: 40px;
+            width: 600px;
+            height: 400px;
+            background-image: url(images/food.jpg);
+            background-size: 600px 400px;
+            color: white;
+        }
+        input[type="text"],input[type="password"]
+        {
+            overflow: hidden;
+            display: block;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            padding: 4px;
+            width: 220px;
+            height: 32px;
+            border: none;
+            outline: none;
+            background: none;
+            border-bottom: 1px solid #aaa;
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            transition: 0.2s ease;
+            color: white;
+        }
+        input[type="submit"]
+        {
+            margin-bottom: 28px;
+            width: 120px;
+            height: 32px;
+            background: #f44336;
+            border: none;
+            border-radius: 2px;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: 0.2s ease;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover,input[type="submit"]:focus
+        {
+            background: #ff5722;
+            transition: 0.2s ease;
+        }
+        ::placeholder
+        {
+            color: white;
+            opacity: 1;
         }
     </style>
 
     <body>
     <?php include('header.php');?>
-    <form id="login" method="post" action="profile.php">
-            <fieldset style="border: black 2px solid;">
-                <legend><b>CUSTOMER LOG IN</b></legend>
+    <form action="dashboard.php" method="POST">
+    <div id="login-box">
+        <div class="login">
+            <input type="text" id="uname" name="uname" placeholder="name*" required>
 
-                <div class="login">
-                    
-                    <input type="text" id="uname" name="uname" size="55px" placeholder="name*" required><br>
-
-                   
-                    <input type="password" id="password" name="password" size="55px" placeholder="password*" required>
-                    
-                    <br><br>
-                    <input type="checkbox" name="rememberme" value="rememberme">
-                    <span class="checkamrk">
-                    <label class="rememberme">Remember me
-                    </span>
-                    <a href="forgetpass.php" class="link">Forget Password?</a>
-                </div><br>
-                <input class="button "type="submit" value="Submit" name="submit">
-                
-                
-                <a href="registration.php" class="link">Didn't have account? Register Here..</a>
-                <a href="employeelogin.php" class="link">Employee Login..</a>
-                
-            </fieldset>
-        </form>
-
+            <input type="password" id="password" name="password" placeholder="password*" required>
+            
+            <input type="checkbox" name="rememberme" value="rememberme">
+            <span class="checkamrk"><label class="rememberme">Remember me</span>
+            
+        <br><br>
+            <input class="button "type="submit" value="Submit" name="submit">
+            <a href="forgetpass.php" class="link"> Forget Password?</a>
+        </div>
+    </div>
+    </form>
+    
+    
     </body>
 </html>

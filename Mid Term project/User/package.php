@@ -87,27 +87,27 @@
     
     <div class="trip_content">
         <div class="inter_trip">
-            <h3>For visit Dubai<a href="">Learn More</a></h3>
+            <h3>For visit Coxs Bazar<a href="">Learn More</a></h3>
         </div>
 
         <div class="inter_trip">
-            <h3>For visit Singapore <a href="">Learn More</a></h3>
+            <h3>For visit Sylhet <a href="">Learn More</a></h3>
         </div>
 
         <div class="inter_trip">
-            <h3>For visit Malaysia <a href="">Learn More</a></h3>
+            <h3>For visit Sundarban <a href="">Learn More</a></h3>
         </div>
 
         <div class="inter_trip">
-            <h3>For Visit Thailand<a href="">Learn More</a></h3>
+            <h3>For Visit Bandarban<a href="">Learn More</a></h3>
         </div>
 
         <div class="inter_trip">
-            <h3>For Visit London<a href="">Learn More</a></h3>
+            <h3>For Visit Rangamati<a href="">Learn More</a></h3>
         </div>
 
         <div class="inter_trip">
-            <h3>For Visit India <a href="">Learn More</a></h3>
+            <h3>For Visit Khagrachari <a href="">Learn More</a></h3>
         </div> 
         
     </div>
