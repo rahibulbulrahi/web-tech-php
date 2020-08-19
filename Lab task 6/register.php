@@ -96,10 +96,10 @@
             <div class="left-box">
                 <h1>Sign Up</h1>
 
-                <input type="text" name="username" placeholder="Username*" required/>
-                <input type="text" name="email" placeholder="Email*" required/>
-                <input type="password" name="password" placeholder="Password*" required/>
-                <input type="password" name="re_password" placeholder="Retype Password*" required/>
+                <input type="text" name="username" placeholder="Username*" value="" required/>
+                <input type="text" name="email" placeholder="Email*" value="" required/>
+                <input type="password" name="password" placeholder="Password*" value="" required/>
+                <input type="password" name="re_password" placeholder="Retype Password*" value="" required/>
 
                 <input type="submit" name="signup-button" value="Sign Up"/>
             </div>

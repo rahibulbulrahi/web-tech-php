@@ -1,5 +1,4 @@
 <?php
-    session_start();
 
     $server = "localhost";
     $dbuser = "root";
@@ -11,7 +10,15 @@
     if($con)
     {
         ?>
-        <script
+        <script>alart("registration complete, please sign in.");</script>
+        <?php
+    }
+    else
+    {
+        ?>
+        <script>alert("Registration failed, Please do again");</script>
+        <?php
+
     }
 
 
