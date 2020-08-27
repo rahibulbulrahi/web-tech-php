@@ -25,5 +25,24 @@
                 <div class="line3"></div>
             </div>
         </nav>
+        <script>
+            const navslide = () => 
+            {
+                const corner = document.querySelector('.corner');
+                const nav = document.querySelector('.nav-link');
+                const navLinks = document.querySelectorAll('.nav-link li');
+
+                corner.addEventListener('click',() => 
+                {
+                    nav.classList.toggle('nav-active');
+                });
+
+                navLinks.forEach((link, index) => 
+                {
+                    console.log(index);
+                });
+            }
+            navslide();
+        </script>
     </body>
 </html>
