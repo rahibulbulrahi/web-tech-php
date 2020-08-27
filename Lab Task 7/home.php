@@ -15,7 +15,7 @@
     <form>
         <div class="search">
             <h1><b>FIND THE GOOD TRIP HERE</b></h1>
-            <input type="search" id="search" name="search" size="60px" placeholder="Where to go?*" required>
+            <input type="text" id="search" name="search" size="60px" placeholder="Where to go?*" required>
             <input class="button" type="submit" value="Search" name="search">
         </div>
     </form>
