@@ -23,7 +23,7 @@ nav
 {
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 30%;
 }
 .nav-link li
 {
@@ -36,4 +36,50 @@ nav
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
-};
+}
+.corner
+{
+    display: none;
+}
+.corner div
+{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: black;
+}
+@media screen and (max-width:1024px)
+{
+    .nav-link
+    {
+        width: 60%;
+    }
+}
+@media screen and (max-width:768px)
+{
+    body
+    {
+        overflow-x: hidden;
+    }
+    .nav-link
+    {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: lightblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+    }
+    .nav-link li
+    {
+        opacity: 0;
+    }
+    .corner
+    {
+        display: block;
+    }
+}

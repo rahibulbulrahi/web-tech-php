@@ -16,11 +16,14 @@
 
             <ul class="nav-link">
                 <li><a href="home.php">Home</a></li>
-                <li><a href="#section-about">About</a></li>
                 <li><a href="#section-tour">Top Tour</a></li>
-                <li><a href="#section-guide">Tour Guide</a></li>
                 <li><a href="login.php">Login</a></li>
             </ul>
+            <div class="corner">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </body>
 </html>
