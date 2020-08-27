@@ -5,6 +5,7 @@
         <meta name="viewpoint" content="width=device-width, initial-scale=1.8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="style/headerstyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> 
     </head>
 
     <body>
@@ -13,16 +14,12 @@
                 <h4>The Project</h4>
             </div>
 
-            <ul>
-                <li>
-                    <a href="home.php">Home</a>
-                </li>
-                <li>
-                    <a href="login.php">Login</a>
-                </li>
-                <li>
-                    <a href="register.php">Registration</a>
-                </li>
+            <ul class="nav-link">
+                <li><a href="home.php">Home</a></li>
+                <li><a href="#section-about">About</a></li>
+                <li><a href="#section-tour">Top Tour</a></li>
+                <li><a href="#section-guide">Tour Guide</a></li>
+                <li><a href="login.php">Login</a></li>
             </ul>
         </nav>
     </body>
