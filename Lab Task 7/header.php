@@ -30,17 +30,26 @@
             {
                 const corner = document.querySelector('.corner');
                 const nav = document.querySelector('.nav-link');
-                const navLinks = document.querySelectorAll('.nav-link li');
+                const navLink = document.querySelectorAll('.nav-link li');
 
                 corner.addEventListener('click',() => 
                 {
                     nav.classList.toggle('nav-active');
+
+                    navLink.forEach((link, header) => 
+                    {
+                        if(link.style.animation)
+                        {
+                            link.style.animation = '';
+                        }
+                        else
+                        {
+                            link.style.animation = `navlinkFade 0.5s ease forwards ${header / 7 + 1}s`;
+                        }
+                    });
                 });
 
-                navLinks.forEach((link, index) => 
-                {
-                    console.log(index);
-                });
+               
             }
             navslide();
         </script>
