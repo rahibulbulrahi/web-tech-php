@@ -9,7 +9,7 @@ nav
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: lightblue;
+    background: -webkit-linear-gradient(left, #7579ff, #b224ef);
     font-family: 'Poppins', sans-serif;
 }
 .logo

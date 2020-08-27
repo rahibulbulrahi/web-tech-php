@@ -8,7 +8,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> 
         <title>Log in</title>
     </head>
+    
     <body>
+    <?php include('header.php')?> 
         <div class="main">
             <div class="form">
                 <h2>Sign in</h2>
